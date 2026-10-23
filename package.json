@@ -1,0 +1,23 @@
+{
+  "name": "bubble",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "gen:stages": "tsx scripts/gen-stages.ts",
+    "build": "vite build",
+    "verify:release": "node scripts/verify-release.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "24.19.2",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3",
+    "vite": "8.3.5",
+    "vite-plugin-singlefile": "2.3.4",
+    "vitest": "5.0.5"
+  }
+}
