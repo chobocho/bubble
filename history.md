@@ -1,3 +1,10 @@
+### [2026-10-23 06:28] 200개 스테이지(수제 10 + 시드 생성 190) 추가
+- **기획:** plan.md 태스크 7 — 튜토리얼 1~10 수제, 11~200 은 8개 패턴 시드 생성 + 낙하 제거·색 보정·검증 후 stages.json 커밋
+- **TC:** 정상: 200개 연속 id·난이도 표·월드 내 행 수 증가·패턴 연속 금지·생성 결정성·JSON 드리프트 / 엣지: 전 스테이지 §4.5 규칙·중복 rows·stageParams 경계(0, 201)
+- **개발:** src/stages/types.ts, src/stages/handmade.ts, src/stages/generator.ts, src/stages/index.ts, src/stages/stages.json, scripts/gen-stages.ts, tests/stages.test.ts
+- **검증:** 291 passed, 0 failed / typecheck 0 errors
+- **비고:** 수제 스테이지도 월드 1 표(3색, 4~5행, 간격 10)를 따름. stages.json 약 44KB
+
 ### [2026-10-23 06:24] 게임 상태 머신과 점수 계산 구현
 - **기획:** plan.md 태스크 6 — 조준→비행→정리→(조준|클리어|게임오버) 플레이 세션, 일시정지 플래그, 이벤트 큐
 - **TC:** 정상: 클리어·점수 공식·데드라인 게임오버·천장 하강/경고·사라진 색 재추첨·시드 결정성 / 엣지: 낙하 배수 상한·보너스 하한·하강 후 게임오버·일시정지 중 정지·각도 제한·비행 중 재발사

@@ -1,0 +1,2986 @@
+[
+  {
+    "id": 1,
+    "world": 1,
+    "colors": 3,
+    "dropInterval": 10,
+    "rows": [
+      "RRRGGGBB",
+      "RRGGGBB",
+      ".RRGGBB.",
+      "..RGB.."
+    ]
+  },
+  {
+    "id": 2,
+    "world": 1,
+    "colors": 3,
+    "dropInterval": 10,
+    "rows": [
+      "RRGGBBRR",
+      "RGGBBRR",
+      "RRGGBBRR",
+      ".GGBBR."
+    ]
+  },
+  {
+    "id": 3,
+    "world": 1,
+    "colors": 3,
+    "dropInterval": 10,
+    "rows": [
+      "BBRRGGBB",
+      "BRRGGBB",
+      "GGBBRRGG",
+      "GBBRRGG"
+    ]
+  },
+  {
+    "id": 4,
+    "world": 1,
+    "colors": 3,
+    "dropInterval": 10,
+    "rows": [
+      "GGBBBBGG",
+      "G.BBB.G",
+      "R..BB..R",
+      "R.....R"
+    ]
+  },
+  {
+    "id": 5,
+    "world": 1,
+    "colors": 3,
+    "dropInterval": 10,
+    "rows": [
+      "RRBBBBGG",
+      "R.BBB.G",
+      "R..BB..G",
+      "G.....R"
+    ]
+  },
+  {
+    "id": 6,
+    "world": 1,
+    "colors": 3,
+    "dropInterval": 10,
+    "rows": [
+      "BB.RR.GG",
+      "B..R..G",
+      "..GBGB..",
+      "..BGB.."
+    ]
+  },
+  {
+    "id": 7,
+    "world": 1,
+    "colors": 3,
+    "dropInterval": 10,
+    "rows": [
+      "RRR..BBB",
+      ".R....B",
+      ".GG..GG.",
+      "GBG.GBG",
+      ".BB..BB."
+    ]
+  },
+  {
+    "id": 8,
+    "world": 1,
+    "colors": 3,
+    "dropInterval": 10,
+    "rows": [
+      "GGBRRBGG",
+      "G.B.B.G",
+      "..RRRR..",
+      ".GBBBG.",
+      "..GGGG.."
+    ]
+  },
+  {
+    "id": 9,
+    "world": 1,
+    "colors": 3,
+    "dropInterval": 10,
+    "rows": [
+      "RRGGBBRR",
+      "GGBBRRG",
+      "BBRRGGBB",
+      "RRGGBBR",
+      "GGBBRRGG"
+    ]
+  },
+  {
+    "id": 10,
+    "world": 1,
+    "colors": 3,
+    "dropInterval": 10,
+    "rows": [
+      "BRRGGBBR",
+      "BRGGBRR",
+      "GBRRGBBG",
+      "GBBRGGB",
+      ".RGGBBR."
+    ]
+  },
+  {
+    "id": 11,
+    "world": 1,
+    "colors": 3,
+    "dropInterval": 10,
+    "rows": [
+      "BBBBCBRR",
+      "..RB...",
+      "..RBB...",
+      ".RRRB..",
+      "..CCB..."
+    ]
+  },
+  {
+    "id": 12,
+    "world": 1,
+    "colors": 3,
+    "dropInterval": 10,
+    "rows": [
+      "OOOOOOOO",
+      ".O.O.O.",
+      "..OOOO..",
+      ".POROP.",
+      "RRP..PPP"
+    ]
+  },
+  {
+    "id": 13,
+    "world": 1,
+    "colors": 3,
+    "dropInterval": 10,
+    "rows": [
+      "PBPCPPPC",
+      "...PBCP",
+      "....PCPP",
+      "...BCCP",
+      "BPCPPPPP"
+    ]
+  },
+  {
+    "id": 14,
+    "world": 1,
+    "colors": 3,
+    "dropInterval": 10,
+    "rows": [
+      ".PWPPPR.",
+      "..PPP..",
+      ".RRPPRR.",
+      "PRP.RRP",
+      ".PWPPWW."
+    ]
+  },
+  {
+    "id": 15,
+    "world": 1,
+    "colors": 3,
+    "dropInterval": 10,
+    "rows": [
+      "RRGGGGGG",
+      "R.GGOGG",
+      "RGOGG.GG",
+      "GGGRGOR",
+      "GGG.RRRR"
+    ]
+  },
+  {
+    "id": 16,
+    "world": 1,
+    "colors": 3,
+    "dropInterval": 10,
+    "rows": [
+      "YYYYYYYY",
+      "YYYYYYY",
+      "PPPPPPPP",
+      "WWWW.WW",
+      "YYY.YYYY"
+    ]
+  },
+  {
+    "id": 17,
+    "world": 1,
+    "colors": 3,
+    "dropInterval": 10,
+    "rows": [
+      "ROOOOOOR",
+      "ROROROR",
+      "RWORROWR",
+      "ROWOWOR",
+      "RRRWWRRR"
+    ]
+  },
+  {
+    "id": 18,
+    "world": 1,
+    "colors": 3,
+    "dropInterval": 10,
+    "rows": [
+      ".BBBBBB.",
+      "BGB.GBB",
+      ".GGGGPB.",
+      "..GGP..",
+      ".PGGBPG."
+    ]
+  },
+  {
+    "id": 19,
+    "world": 1,
+    "colors": 3,
+    "dropInterval": 10,
+    "rows": [
+      "BBBBBBBB",
+      "..YB...",
+      "..YBB...",
+      ".BBCC..",
+      "..CBY..."
+    ]
+  },
+  {
+    "id": 20,
+    "world": 1,
+    "colors": 3,
+    "dropInterval": 9,
+    "rows": [
+      "BBOOOOBB",
+      "BG...GB",
+      "..GOOG..",
+      "GBBBBBG",
+      "OBGGGGBO"
+    ]
+  },
+  {
+    "id": 21,
+    "world": 2,
+    "colors": 4,
+    "dropInterval": 9,
+    "rows": [
+      "PPPPPYYR",
+      ".RRRRR.",
+      "..RPRR..",
+      "..PYW..",
+      "...WW..."
+    ]
+  },
+  {
+    "id": 22,
+    "world": 2,
+    "colors": 4,
+    "dropInterval": 9,
+    "rows": [
+      "RRRRRYYR",
+      ".BRBBG.",
+      "..BYBB..",
+      ".RRRBB.",
+      "GGBRRYGG"
+    ]
+  },
+  {
+    "id": 23,
+    "world": 2,
+    "colors": 4,
+    "dropInterval": 9,
+    "rows": [
+      "..YYYY..",
+      ".RRYYY.",
+      ".PBYBYB.",
+      "PBBBPPP",
+      "RRBPBBBB"
+    ]
+  },
+  {
+    "id": 24,
+    "world": 2,
+    "colors": 4,
+    "dropInterval": 9,
+    "rows": [
+      "WWWWWWCC",
+      "..Y..Y.",
+      "..WW.YO.",
+      ".WWWYOO",
+      "..WW.WC."
+    ]
+  },
+  {
+    "id": 25,
+    "world": 2,
+    "colors": 4,
+    "dropInterval": 9,
+    "rows": [
+      "GGOOOOOG",
+      ".OOGGO.",
+      "..RPRO..",
+      "..PPR..",
+      "...PO..."
+    ]
+  },
+  {
+    "id": 26,
+    "world": 2,
+    "colors": 4,
+    "dropInterval": 9,
+    "rows": [
+      "GGGGBGGB",
+      ".BGGGW.",
+      "..WBWW..",
+      ".OBBOG.",
+      "WWOGBGWW"
+    ]
+  },
+  {
+    "id": 27,
+    "world": 2,
+    "colors": 4,
+    "dropInterval": 9,
+    "rows": [
+      "WGRRRCCC",
+      "GGRWCCC",
+      "WC..RCCC",
+      "G...CRC",
+      "RR..RRCC"
+    ]
+  },
+  {
+    "id": 28,
+    "world": 2,
+    "colors": 4,
+    "dropInterval": 9,
+    "rows": [
+      "..RRRR..",
+      ".RRWRO.",
+      ".RRWWRR.",
+      "RRRORWW",
+      "POPPRRRR"
+    ]
+  },
+  {
+    "id": 29,
+    "world": 2,
+    "colors": 4,
+    "dropInterval": 9,
+    "rows": [
+      "YYYBBYYY",
+      "GYG.GYG",
+      "GYB..BYG",
+      "CBBBBBC",
+      "BCBBBBCB"
+    ]
+  },
+  {
+    "id": 30,
+    "world": 2,
+    "colors": 4,
+    "dropInterval": 9,
+    "rows": [
+      "..RGRR..",
+      ".RRGRR.",
+      ".PPPRRR.",
+      "GPPPYRY",
+      "PGPGYGGR"
+    ]
+  },
+  {
+    "id": 31,
+    "world": 2,
+    "colors": 4,
+    "dropInterval": 9,
+    "rows": [
+      "PBBBPYYB",
+      "YBBWBW.",
+      "YYBBBW..",
+      "YBB..W.",
+      "YYW...BP",
+      "YBW..YW"
+    ]
+  },
+  {
+    "id": 32,
+    "world": 2,
+    "colors": 4,
+    "dropInterval": 9,
+    "rows": [
+      "GBGBGGBG",
+      "...G.O.",
+      "....GO..",
+      "...GGG.",
+      "...WWGG.",
+      "...WGO."
+    ]
+  },
+  {
+    "id": 33,
+    "world": 2,
+    "colors": 4,
+    "dropInterval": 9,
+    "rows": [
+      "OOOWWOOO",
+      "...W...",
+      ".WWPPWW.",
+      "WW...WW",
+      "PWPWWPWP",
+      "WCOCOCW"
+    ]
+  },
+  {
+    "id": 34,
+    "world": 2,
+    "colors": 4,
+    "dropInterval": 9,
+    "rows": [
+      "..YYCP..",
+      "..YCP..",
+      "..PCPP..",
+      ".GGCPC.",
+      ".GGGCCG.",
+      "GGCCCGG"
+    ]
+  },
+  {
+    "id": 35,
+    "world": 2,
+    "colors": 4,
+    "dropInterval": 9,
+    "rows": [
+      "PPPPPPPP",
+      "PPPPPPP",
+      ".CCCCCCC",
+      "RRRRRRR",
+      "OOOOOOOO",
+      "PPP.PPP"
+    ]
+  },
+  {
+    "id": 36,
+    "world": 2,
+    "colors": 4,
+    "dropInterval": 9,
+    "rows": [
+      "BBPPPPPP",
+      ".PPYGG.",
+      "..PPPG..",
+      "..BPY..",
+      "...PY...",
+      "...P..."
+    ]
+  },
+  {
+    "id": 37,
+    "world": 2,
+    "colors": 4,
+    "dropInterval": 9,
+    "rows": [
+      "WCWRRRRR",
+      "W..W...",
+      ".W..W...",
+      "YY.WW..",
+      "RRYRWR..",
+      "RC.CW.."
+    ]
+  },
+  {
+    "id": 38,
+    "world": 2,
+    "colors": 4,
+    "dropInterval": 9,
+    "rows": [
+      "..YRRR..",
+      ".RYRWY.",
+      "YBYYRWWR",
+      ".YBRRW.",
+      "..RWWW..",
+      ".RRWWB."
+    ]
+  },
+  {
+    "id": 39,
+    "world": 2,
+    "colors": 4,
+    "dropInterval": 9,
+    "rows": [
+      "..CGOO..",
+      "..YOY..",
+      "..GCCC..",
+      ".GYCCC.",
+      ".GCCCCC.",
+      "GGGCCCC"
+    ]
+  },
+  {
+    "id": 40,
+    "world": 2,
+    "colors": 4,
+    "dropInterval": 8,
+    "rows": [
+      "PBBBOOOO",
+      "R.PPOP.",
+      "OROBBPPB",
+      "RRRRPPB",
+      "RR..RRBO",
+      "PPBRPBB"
+    ]
+  },
+  {
+    "id": 41,
+    "world": 3,
+    "colors": 4,
+    "dropInterval": 9,
+    "rows": [
+      "CCOYOOWC",
+      "Y.Y....",
+      "OYYW....",
+      "WYYY...",
+      "CCYO...."
+    ]
+  },
+  {
+    "id": 42,
+    "world": 3,
+    "colors": 4,
+    "dropInterval": 9,
+    "rows": [
+      "GRGBBPPP",
+      ".GGBBR.",
+      "..GBBB..",
+      "..RPG..",
+      "...BP..."
+    ]
+  },
+  {
+    "id": 43,
+    "world": 3,
+    "colors": 4,
+    "dropInterval": 9,
+    "rows": [
+      "WWWWWWWW",
+      "PPPPPPP",
+      "PPPPPPPP",
+      "CCCCCC.",
+      "YYYYYYYY"
+    ]
+  },
+  {
+    "id": 44,
+    "world": 3,
+    "colors": 4,
+    "dropInterval": 9,
+    "rows": [
+      "OOOOPPPP",
+      "..W..P.",
+      "..WC.PO.",
+      ".WCOPPP",
+      "..OC.CP."
+    ]
+  },
+  {
+    "id": 45,
+    "world": 3,
+    "colors": 4,
+    "dropInterval": 9,
+    "rows": [
+      "YYWWWWWP",
+      "YR.PWWW",
+      "YR.PPWWW",
+      "R.PWYYR",
+      "RRRPWPPR"
+    ]
+  },
+  {
+    "id": 46,
+    "world": 3,
+    "colors": 4,
+    "dropInterval": 9,
+    "rows": [
+      "..WWGW..",
+      ".YWYWW.",
+      ".YYYGWG.",
+      "WRWRWYY",
+      "WRRWWWYY"
+    ]
+  },
+  {
+    "id": 47,
+    "world": 3,
+    "colors": 4,
+    "dropInterval": 9,
+    "rows": [
+      "BOBRBBOW",
+      "...BRBB",
+      "....O..B",
+      "...B...",
+      "OWWRB..."
+    ]
+  },
+  {
+    "id": 48,
+    "world": 3,
+    "colors": 4,
+    "dropInterval": 9,
+    "rows": [
+      "WGGGGGWR",
+      ".GGWGG.",
+      "..RGYR..",
+      "..RGY..",
+      "...WY..."
+    ]
+  },
+  {
+    "id": 49,
+    "world": 3,
+    "colors": 4,
+    "dropInterval": 9,
+    "rows": [
+      "OWWWOWWW",
+      "OOWWC..",
+      "CCOWO...",
+      "OGGGG..",
+      "CWGCGGGG"
+    ]
+  },
+  {
+    "id": 50,
+    "world": 3,
+    "colors": 4,
+    "dropInterval": 9,
+    "rows": [
+      "PPPPPPPP",
+      "OOOOOOO",
+      "OOOOOOOO",
+      "GGGGGGG",
+      "CCCCCCC."
+    ]
+  },
+  {
+    "id": 51,
+    "world": 3,
+    "colors": 4,
+    "dropInterval": 9,
+    "rows": [
+      "..OYYR..",
+      ".OOOOW.",
+      "WOOYOWWW",
+      ".OROOY.",
+      "..RRRY..",
+      ".OOROW."
+    ]
+  },
+  {
+    "id": 52,
+    "world": 3,
+    "colors": 4,
+    "dropInterval": 9,
+    "rows": [
+      "YWWYYWWY",
+      "WW.W.WW",
+      "WWGWWGWW",
+      ".YWWWY.",
+      "O.O..O.O",
+      "OOYGYOO"
+    ]
+  },
+  {
+    "id": 53,
+    "world": 3,
+    "colors": 4,
+    "dropInterval": 9,
+    "rows": [
+      "GGGCYWWW",
+      "...G.G.",
+      "....GC..",
+      "...GGG.",
+      "...YGGG.",
+      "...CGY."
+    ]
+  },
+  {
+    "id": 54,
+    "world": 3,
+    "colors": 4,
+    "dropInterval": 9,
+    "rows": [
+      "BBBBCRRR",
+      ".PBBPP.",
+      "..BCPP..",
+      "..CPP..",
+      "...PP...",
+      "...P..."
+    ]
+  },
+  {
+    "id": 55,
+    "world": 3,
+    "colors": 4,
+    "dropInterval": 9,
+    "rows": [
+      "CCYYYYYY",
+      "C..Y..C",
+      "C......G",
+      "G..Y..O",
+      "OOYCCYYG",
+      "OOOOYOO"
+    ]
+  },
+  {
+    "id": 56,
+    "world": 3,
+    "colors": 4,
+    "dropInterval": 9,
+    "rows": [
+      "CCCCCCCC",
+      ".CCCCCC",
+      "..WWWWWW",
+      ".PPPPPP",
+      "OOOOOOO.",
+      "CCCCC.C"
+    ]
+  },
+  {
+    "id": 57,
+    "world": 3,
+    "colors": 4,
+    "dropInterval": 9,
+    "rows": [
+      "RRRRROCC",
+      ".RYROO.",
+      "..RRRR..",
+      ".ORROO.",
+      "YORRYORR",
+      ".CRRRO."
+    ]
+  },
+  {
+    "id": 58,
+    "world": 3,
+    "colors": 4,
+    "dropInterval": 9,
+    "rows": [
+      "CPPPGPPC",
+      "PBB.BGP",
+      "PBP..PBP",
+      "P.C.C.P",
+      ".B.CG.B.",
+      "BBCPCBB"
+    ]
+  },
+  {
+    "id": 59,
+    "world": 3,
+    "colors": 4,
+    "dropInterval": 9,
+    "rows": [
+      "..OYBB..",
+      "..YYY..",
+      "..YCCB..",
+      ".YOOBB.",
+      ".YCCCBY.",
+      "CBOYBOO"
+    ]
+  },
+  {
+    "id": 60,
+    "world": 3,
+    "colors": 4,
+    "dropInterval": 8,
+    "rows": [
+      "WRRRPPPP",
+      "..WC...",
+      "..W.C...",
+      ".WWCW..",
+      ".WWCCC..",
+      ".PCRW.."
+    ]
+  },
+  {
+    "id": 61,
+    "world": 4,
+    "colors": 5,
+    "dropInterval": 8,
+    "rows": [
+      "YYCPPPPP",
+      "BBRRYPR",
+      ".BCYRPPP",
+      "BBCRRPY",
+      "CBB.PCCC",
+      "CCYYCCC"
+    ]
+  },
+  {
+    "id": 62,
+    "world": 4,
+    "colors": 5,
+    "dropInterval": 8,
+    "rows": [
+      "PPYYGYOO",
+      ".CCCPP.",
+      "..GGOP..",
+      "..GGP..",
+      "...GG...",
+      "...C..."
+    ]
+  },
+  {
+    "id": 63,
+    "world": 4,
+    "colors": 5,
+    "dropInterval": 8,
+    "rows": [
+      "WWYYBBPY",
+      "W..G...",
+      ".W..G...",
+      "WY.GG..",
+      "WYPGGG..",
+      "BP.WG.."
+    ]
+  },
+  {
+    "id": 64,
+    "world": 4,
+    "colors": 5,
+    "dropInterval": 8,
+    "rows": [
+      "..CPCC..",
+      "..GCW..",
+      "..RGPW..",
+      ".RRGCW.",
+      ".RCCGGG.",
+      "PGCCCRR"
+    ]
+  },
+  {
+    "id": 65,
+    "world": 4,
+    "colors": 5,
+    "dropInterval": 8,
+    "rows": [
+      "GRRRPWWG",
+      "RR.PPGW",
+      "RC.CPP.W",
+      "RCCCCPP",
+      ".CR.CCPP",
+      "CWRCCWP"
+    ]
+  },
+  {
+    "id": 66,
+    "world": 4,
+    "colors": 5,
+    "dropInterval": 8,
+    "rows": [
+      ".YYYYYB.",
+      "YCY.YCP",
+      ".YCYPYP.",
+      "..PWP..",
+      ".PPWPYY.",
+      "WBY.YYB"
+    ]
+  },
+  {
+    "id": 67,
+    "world": 4,
+    "colors": 5,
+    "dropInterval": 8,
+    "rows": [
+      "..OGPP..",
+      "..YPW..",
+      "..OGGW..",
+      ".OOGGW.",
+      ".OOOOOO.",
+      "YOYGPPO"
+    ]
+  },
+  {
+    "id": 68,
+    "world": 4,
+    "colors": 5,
+    "dropInterval": 8,
+    "rows": [
+      "CBBCCBGY",
+      "...C.G.",
+      "....WG..",
+      "...GCY.",
+      "...GYGG.",
+      "...WWC."
+    ]
+  },
+  {
+    "id": 69,
+    "world": 4,
+    "colors": 5,
+    "dropInterval": 8,
+    "rows": [
+      "WWWWOOOO",
+      "WWWWOOO",
+      "CWBBOOWW",
+      "YB..OCC",
+      "YB...OCC",
+      "YY..BCC"
+    ]
+  },
+  {
+    "id": 70,
+    "world": 4,
+    "colors": 5,
+    "dropInterval": 8,
+    "rows": [
+      "RGRRRRRR",
+      "..P..C.",
+      "..G..C..",
+      ".PO.CC.",
+      ".PPOCCO.",
+      ".PP.GP."
+    ]
+  },
+  {
+    "id": 71,
+    "world": 4,
+    "colors": 5,
+    "dropInterval": 8,
+    "rows": [
+      "RRGGGGRR",
+      "GGYGYGG",
+      "WRY..YRW",
+      "YRWWWRY",
+      "YYORROYY",
+      ".GORGG.",
+      "RRGYYGRR"
+    ]
+  },
+  {
+    "id": 72,
+    "world": 4,
+    "colors": 5,
+    "dropInterval": 8,
+    "rows": [
+      "YYYYYYYY",
+      "YYYYYYY",
+      "PPPP.PP.",
+      ".CCCCC.",
+      "CCCCCCC.",
+      "OOO.OOO",
+      "GGG.GGGG"
+    ]
+  },
+  {
+    "id": 73,
+    "world": 4,
+    "colors": 5,
+    "dropInterval": 8,
+    "rows": [
+      "YYYRRRRO",
+      "RPPRPPW",
+      ".YYPPOW.",
+      ".YPPPP.",
+      "..PYOP..",
+      "..PWO..",
+      "...RW..."
+    ]
+  },
+  {
+    "id": 74,
+    "world": 4,
+    "colors": 5,
+    "dropInterval": 8,
+    "rows": [
+      "..GGGG..",
+      "..GYG..",
+      "..GGGG..",
+      ".YGPGG.",
+      ".YYRGGG.",
+      "YYRRPYW",
+      "YYWWRPWY"
+    ]
+  },
+  {
+    "id": 75,
+    "world": 4,
+    "colors": 5,
+    "dropInterval": 8,
+    "rows": [
+      "YYYYPPPB",
+      "WWBPYYB",
+      ".BWGPGY.",
+      ".BWGBG.",
+      "..WWBB..",
+      "..WGY..",
+      "...WG..."
+    ]
+  },
+  {
+    "id": 76,
+    "world": 4,
+    "colors": 5,
+    "dropInterval": 8,
+    "rows": [
+      "CCRRBRCC",
+      "R.W..O.",
+      ".RW..O..",
+      "R.W..O.",
+      "BRRR.OB.",
+      "RRRWORO",
+      "RRRW.OO."
+    ]
+  },
+  {
+    "id": 77,
+    "world": 4,
+    "colors": 5,
+    "dropInterval": 8,
+    "rows": [
+      "CRRRRRYY",
+      ".RRRYRY",
+      "YYRR...Y",
+      "CGWYWWW",
+      "CW.YY.WC",
+      ".WWYYYW",
+      "CGRRGWWW"
+    ]
+  },
+  {
+    "id": 78,
+    "world": 4,
+    "colors": 5,
+    "dropInterval": 8,
+    "rows": [
+      "PPPPWWWP",
+      "..OP.G.",
+      "..O.PG..",
+      "..OP.G.",
+      "..RPGGG.",
+      ".PPPGGR",
+      "..WROOG."
+    ]
+  },
+  {
+    "id": 79,
+    "world": 4,
+    "colors": 5,
+    "dropInterval": 8,
+    "rows": [
+      "..OPCG..",
+      "..PRC..",
+      "..PRCO..",
+      ".RPPPR.",
+      ".RPOPPP.",
+      "RRPOGPG",
+      "RCRPCCCO"
+    ]
+  },
+  {
+    "id": 80,
+    "world": 4,
+    "colors": 5,
+    "dropInterval": 7,
+    "rows": [
+      "CCCWCPPO",
+      "O.YP...",
+      ".OY.P...",
+      "O.YP...",
+      "OOYYW...",
+      "OWCYY..",
+      "OCCYY..."
+    ]
+  },
+  {
+    "id": 81,
+    "world": 5,
+    "colors": 5,
+    "dropInterval": 8,
+    "rows": [
+      "RRRRRRRR",
+      "CCCCC.C",
+      "O.OOOOOO",
+      "OOOOO.O",
+      "WWWWWWWW",
+      "YYY.YYY"
+    ]
+  },
+  {
+    "id": 82,
+    "world": 5,
+    "colors": 5,
+    "dropInterval": 8,
+    "rows": [
+      "..CCGC..",
+      "..COO..",
+      "..BOOC..",
+      ".BBBGR.",
+      ".CRBCCG.",
+      "CCBCBCR"
+    ]
+  },
+  {
+    "id": 83,
+    "world": 5,
+    "colors": 5,
+    "dropInterval": 8,
+    "rows": [
+      "OGOOOOOB",
+      "OOOOOOO",
+      "..YYYYYY",
+      "YYYB.YY",
+      "RR.RGRR.",
+      "B.GRRRR"
+    ]
+  },
+  {
+    "id": 84,
+    "world": 5,
+    "colors": 5,
+    "dropInterval": 8,
+    "rows": [
+      ".YYYWWW.",
+      "YYG.WYW",
+      ".GYWWGC.",
+      "..PPW..",
+      ".PCPPPP.",
+      "PCC.PPW"
+    ]
+  },
+  {
+    "id": 85,
+    "world": 5,
+    "colors": 5,
+    "dropInterval": 8,
+    "rows": [
+      "BBBBBPCC",
+      ".BBYPP.",
+      "..BBYB..",
+      "..OYB..",
+      "...OO...",
+      "...C..."
+    ]
+  },
+  {
+    "id": 86,
+    "world": 5,
+    "colors": 5,
+    "dropInterval": 8,
+    "rows": [
+      "..WWWG..",
+      "..RWG..",
+      "..WWGW..",
+      ".PPWYY.",
+      ".PPPWYY.",
+      "YPRRPRY"
+    ]
+  },
+  {
+    "id": 87,
+    "world": 5,
+    "colors": 5,
+    "dropInterval": 8,
+    "rows": [
+      "RRRGBRRR",
+      "RORGROR",
+      "OWRRRRRO",
+      ".RGRGR.",
+      "GG.WW.GG",
+      "GBGGBGG"
+    ]
+  },
+  {
+    "id": 88,
+    "world": 5,
+    "colors": 5,
+    "dropInterval": 8,
+    "rows": [
+      "CPPPRGGP",
+      "P..Y...",
+      ".C..Y...",
+      "RR.RR..",
+      "RCRGRR..",
+      "RR.YP.."
+    ]
+  },
+  {
+    "id": 89,
+    "world": 5,
+    "colors": 5,
+    "dropInterval": 8,
+    "rows": [
+      "OYYBBCCG",
+      "O...BBY",
+      "O....YGY",
+      "C...Y..",
+      "BBBOB...",
+      "YGOBO.."
+    ]
+  },
+  {
+    "id": 90,
+    "world": 5,
+    "colors": 5,
+    "dropInterval": 8,
+    "rows": [
+      "PORWBBBW",
+      ".OOPRB.",
+      "..OOWB..",
+      "..ORB..",
+      "...PR...",
+      "...R..."
+    ]
+  },
+  {
+    "id": 91,
+    "world": 5,
+    "colors": 5,
+    "dropInterval": 8,
+    "rows": [
+      "P...PPPY",
+      "....CPP",
+      ".....CPB",
+      "....YCC",
+      "....BBCC",
+      "....YBG",
+      "....GGBB"
+    ]
+  },
+  {
+    "id": 92,
+    "world": 5,
+    "colors": 5,
+    "dropInterval": 8,
+    "rows": [
+      "OYCCCCCC",
+      "OCPYCOO",
+      ".CBOBOP.",
+      ".CCCYO.",
+      "..COCO..",
+      "..OBO..",
+      "...PC..."
+    ]
+  },
+  {
+    "id": 93,
+    "world": 5,
+    "colors": 5,
+    "dropInterval": 8,
+    "rows": [
+      "PPPGGGGG",
+      "GGGGWGP",
+      "GPBGPWYP",
+      "B...WPY",
+      "B....GYG",
+      ".....WW",
+      ".....WGW"
+    ]
+  },
+  {
+    "id": 94,
+    "world": 5,
+    "colors": 5,
+    "dropInterval": 8,
+    "rows": [
+      "WWWWWWWW",
+      ".PPPPPP",
+      "YYYYY.YY",
+      "Y..YYYY",
+      "CCCCCCCC",
+      "CCCCCCC",
+      "GGGGGG.G"
+    ]
+  },
+  {
+    "id": 95,
+    "world": 5,
+    "colors": 5,
+    "dropInterval": 8,
+    "rows": [
+      "..RGYC..",
+      "..CPP..",
+      "..CCCC..",
+      ".CPCCC.",
+      ".RYYCCC.",
+      "RCYYYCC",
+      "CCCGGCCG"
+    ]
+  },
+  {
+    "id": 96,
+    "world": 5,
+    "colors": 5,
+    "dropInterval": 8,
+    "rows": [
+      "YGPPPWWW",
+      "YGGGYWW",
+      ".GWGYPP.",
+      ".WGGOP.",
+      "..OGOY..",
+      "..WGY..",
+      "...GW..."
+    ]
+  },
+  {
+    "id": 97,
+    "world": 5,
+    "colors": 5,
+    "dropInterval": 8,
+    "rows": [
+      "YYPGCCCY",
+      "G.GGCCG",
+      "RYGYGPGG",
+      "YGCC.GC",
+      "PGGGGYCC",
+      "PGCYYRC",
+      "YYGGGGRR"
+    ]
+  },
+  {
+    "id": 98,
+    "world": 5,
+    "colors": 5,
+    "dropInterval": 8,
+    "rows": [
+      "PPWPCCCW",
+      "YPPCBBC",
+      "YYC..BBP",
+      "YY...BP",
+      "YYP...BB",
+      "BPP...Y",
+      "BWCP..YB"
+    ]
+  },
+  {
+    "id": 99,
+    "world": 5,
+    "colors": 5,
+    "dropInterval": 8,
+    "rows": [
+      "..YRCR..",
+      ".YYCCC.",
+      "GCCYGGGG",
+      ".WWWWG.",
+      "..WRGG..",
+      ".CCWWG.",
+      "GCYWWWWW"
+    ]
+  },
+  {
+    "id": 100,
+    "world": 5,
+    "colors": 5,
+    "dropInterval": 7,
+    "rows": [
+      "PPPPPPPP",
+      "GGGGGGG",
+      "GGGGGGGG",
+      "RRRRRRR",
+      "WWWWW.WW",
+      "BBBBB.B",
+      "BBB..BBB"
+    ]
+  },
+  {
+    "id": 101,
+    "world": 6,
+    "colors": 6,
+    "dropInterval": 7,
+    "rows": [
+      "..WWWP..",
+      "..WWB..",
+      "..WWWW..",
+      ".BWWBY.",
+      ".OYOPGG.",
+      "BPPPWGW",
+      "BBBPOBWY"
+    ]
+  },
+  {
+    "id": 102,
+    "world": 6,
+    "colors": 6,
+    "dropInterval": 7,
+    "rows": [
+      "CCGOGGCC",
+      "CCGYGCC",
+      "Y.R..R.Y",
+      "Y.RRR.Y",
+      ".B.OO.B.",
+      "BBB.BBB",
+      "G..GG..G"
+    ]
+  },
+  {
+    "id": 103,
+    "world": 6,
+    "colors": 6,
+    "dropInterval": 7,
+    "rows": [
+      "..GGGC..",
+      "..GGC..",
+      "..YGPC..",
+      ".YPPPC.",
+      ".OYWYWC.",
+      "OYYCWWW",
+      "OCYWGGWW"
+    ]
+  },
+  {
+    "id": 104,
+    "world": 6,
+    "colors": 6,
+    "dropInterval": 7,
+    "rows": [
+      "WWBPPCCB",
+      "W..CO..",
+      "W...W...",
+      "W..R...",
+      "WWBRR...",
+      "RRWO...",
+      "WROWP..."
+    ]
+  },
+  {
+    "id": 105,
+    "world": 6,
+    "colors": 6,
+    "dropInterval": 7,
+    "rows": [
+      ".PPRGGG.",
+      "GPG.GRG",
+      ".OGGOGO.",
+      "..POO..",
+      ".YYRGGP.",
+      "YYY.GGC",
+      ".PPCCGP."
+    ]
+  },
+  {
+    "id": 106,
+    "world": 6,
+    "colors": 6,
+    "dropInterval": 7,
+    "rows": [
+      "ROGRRRRR",
+      "COPP...",
+      "CPGG....",
+      "BRO....",
+      "CBB.....",
+      "RG.....",
+      "BRB....."
+    ]
+  },
+  {
+    "id": 107,
+    "world": 6,
+    "colors": 6,
+    "dropInterval": 7,
+    "rows": [
+      "..CCCC..",
+      "..RRC..",
+      "..BRCC..",
+      ".YWCCY.",
+      ".YWRRYP.",
+      "YYYRYPP",
+      "YYBBRRPW"
+    ]
+  },
+  {
+    "id": 108,
+    "world": 6,
+    "colors": 6,
+    "dropInterval": 7,
+    "rows": [
+      ".GGGGOY.",
+      "GPG.YYR",
+      ".YYPYYY.",
+      "..YRY..",
+      ".OYYYYY.",
+      "OOY.OYR",
+      ".PYOWWW."
+    ]
+  },
+  {
+    "id": 109,
+    "world": 6,
+    "colors": 6,
+    "dropInterval": 7,
+    "rows": [
+      "YWWWOYYY",
+      "C.PR...",
+      ".CP.R...",
+      "C.PO...",
+      "CCPRR...",
+      "CCCRR..",
+      "OCCRC..."
+    ]
+  },
+  {
+    "id": 110,
+    "world": 6,
+    "colors": 6,
+    "dropInterval": 7,
+    "rows": [
+      "BBBBBBBB",
+      "BBBBBB.",
+      "YWYYYYYY",
+      "YYY.YYY",
+      "CRR.RRRR",
+      "WOOOOOO",
+      "COOWCOOO"
+    ]
+  },
+  {
+    "id": 111,
+    "world": 6,
+    "colors": 6,
+    "dropInterval": 7,
+    "rows": [
+      "YOOOORRR",
+      "OYBOPRR",
+      "O...PYYO",
+      "....PPR",
+      ".....BGG",
+      ".....BB",
+      "G....PBB",
+      "GYGYOBB"
+    ]
+  },
+  {
+    "id": 112,
+    "world": 6,
+    "colors": 6,
+    "dropInterval": 7,
+    "rows": [
+      "RYYYYBYY",
+      "PGYWYYR",
+      ".GYYGYY.",
+      ".BYBYB.",
+      "..GWPB..",
+      "..YWB..",
+      "...YR...",
+      "...P..."
+    ]
+  },
+  {
+    "id": 113,
+    "world": 6,
+    "colors": 6,
+    "dropInterval": 7,
+    "rows": [
+      "RRROOOOR",
+      "RRROOOO",
+      "RRCOCOOO",
+      "BBOCOBO",
+      "OOOOCOOP",
+      "OOOPPY.",
+      "OOOOPCYY",
+      "...PPCC"
+    ]
+  },
+  {
+    "id": 114,
+    "world": 6,
+    "colors": 6,
+    "dropInterval": 7,
+    "rows": [
+      "YYBRRWYO",
+      "G.W..B.",
+      ".GW..B..",
+      "G.R..B.",
+      ".GW..B..",
+      "YWB.BB.",
+      "YWGOOBB.",
+      "YYW.OB."
+    ]
+  },
+  {
+    "id": 115,
+    "world": 6,
+    "colors": 6,
+    "dropInterval": 7,
+    "rows": [
+      "OWRRGGGG",
+      "OROWBGW",
+      "CR...BWC",
+      "R....RW",
+      "R.....RW",
+      ".....WR",
+      ".....OBR",
+      "....OCC"
+    ]
+  },
+  {
+    "id": 116,
+    "world": 6,
+    "colors": 6,
+    "dropInterval": 7,
+    "rows": [
+      ".OOOOWW.",
+      "WGG.WOO",
+      ".COGOOO.",
+      "..RRO..",
+      ".GYCRWO.",
+      "YCR.OOW",
+      ".GYOWOW.",
+      "..YWO.."
+    ]
+  },
+  {
+    "id": 117,
+    "world": 6,
+    "colors": 6,
+    "dropInterval": 7,
+    "rows": [
+      "WGPPPPPP",
+      "W.RP...",
+      ".WR.P...",
+      "W.RP...",
+      ".WR.P...",
+      "WWWGG..",
+      "WBPPCG..",
+      "BBCPC.."
+    ]
+  },
+  {
+    "id": 118,
+    "world": 6,
+    "colors": 6,
+    "dropInterval": 7,
+    "rows": [
+      "YPPWWWWO",
+      "OOOBPP.",
+      "OO.BPPPP",
+      ".OBO.YP",
+      "R.OBBPRO",
+      "YWWWYPO",
+      "Y..WYBO.",
+      "WBRPPPR"
+    ]
+  },
+  {
+    "id": 119,
+    "world": 6,
+    "colors": 6,
+    "dropInterval": 7,
+    "rows": [
+      "..BWWY..",
+      "..CCB..",
+      "..CGBB..",
+      ".COGBY.",
+      ".OWWGGG.",
+      ".WCWWG.",
+      ".WCGGGO.",
+      "OWGGGYO"
+    ]
+  },
+  {
+    "id": 120,
+    "world": 6,
+    "colors": 6,
+    "dropInterval": 6,
+    "rows": [
+      "PPOORGGC",
+      "YOGRGGG",
+      ".YYPGCO.",
+      ".YPPYY.",
+      "..PCPP..",
+      "..GPP..",
+      "...GR...",
+      "...G..."
+    ]
+  },
+  {
+    "id": 121,
+    "world": 7,
+    "colors": 6,
+    "dropInterval": 7,
+    "rows": [
+      "RRBBBBBP",
+      "ORR...B",
+      "OPR....P",
+      "RW....W",
+      "OW.....W",
+      "RW....G",
+      "RGG...BW"
+    ]
+  },
+  {
+    "id": 122,
+    "world": 7,
+    "colors": 6,
+    "dropInterval": 7,
+    "rows": [
+      "WBBCPPCC",
+      "COCC.CG",
+      "..CGGCCC",
+      "GCPPCCB",
+      "GCWPCCCC",
+      "OWPPCCC",
+      "COPPCCCC"
+    ]
+  },
+  {
+    "id": 123,
+    "world": 7,
+    "colors": 6,
+    "dropInterval": 7,
+    "rows": [
+      "GPBGGGGB",
+      "..GGG..",
+      "YOYYYYBP",
+      "OOYYYOO",
+      "OYCCCCYO",
+      "YCC.CCY",
+      "CPCCCCCC"
+    ]
+  },
+  {
+    "id": 124,
+    "world": 7,
+    "colors": 6,
+    "dropInterval": 7,
+    "rows": [
+      "OOOOOOOO",
+      "PPP.PPP",
+      "CCBCCCCC",
+      "CCCCCCC",
+      "BGGGGGGG",
+      "BGGG.G.",
+      "R.RRRRRR"
+    ]
+  },
+  {
+    "id": 125,
+    "world": 7,
+    "colors": 6,
+    "dropInterval": 7,
+    "rows": [
+      "GGGPYYYY",
+      "CGGRWPG",
+      ".GYRGPW.",
+      ".GCGPR.",
+      "..RRPW..",
+      "..RYC..",
+      "...YY..."
+    ]
+  },
+  {
+    "id": 126,
+    "world": 7,
+    "colors": 6,
+    "dropInterval": 7,
+    "rows": [
+      "OGGGRWWW",
+      "GCYWWWW",
+      "GO..CWWW",
+      "O.....Y",
+      "OO.....W",
+      "OWYC..O",
+      "OWWRRWWG"
+    ]
+  },
+  {
+    "id": 127,
+    "world": 7,
+    "colors": 6,
+    "dropInterval": 7,
+    "rows": [
+      "..OPCB..",
+      ".GPORO.",
+      "BPPPROOG",
+      ".GGRBB.",
+      "..GORR..",
+      ".GBBCR.",
+      "CGBRGRRR"
+    ]
+  },
+  {
+    "id": 128,
+    "world": 7,
+    "colors": 6,
+    "dropInterval": 7,
+    "rows": [
+      "PPCCRRPR",
+      "R.RB...",
+      ".RR.B...",
+      "G.RB...",
+      "CRBBB...",
+      "RRBBG..",
+      "GOBOO..."
+    ]
+  },
+  {
+    "id": 129,
+    "world": 7,
+    "colors": 6,
+    "dropInterval": 7,
+    "rows": [
+      "RRCCCRPP",
+      "RCCCCPC",
+      ".BCCCCC.",
+      ".YBRCY.",
+      "..OBOO..",
+      "..CPB..",
+      "...CY..."
+    ]
+  },
+  {
+    "id": 130,
+    "world": 7,
+    "colors": 6,
+    "dropInterval": 7,
+    "rows": [
+      "GGGGOOOY",
+      "..CCORY",
+      "...CCYCW",
+      "..ROOCR",
+      "...RWWCC",
+      "...RWCC",
+      "...RRWCC"
+    ]
+  },
+  {
+    "id": 131,
+    "world": 7,
+    "colors": 6,
+    "dropInterval": 7,
+    "rows": [
+      "CCCCCCCC",
+      "CC..C.C",
+      "YYYYYYYY",
+      ".RRRRRR",
+      "R.RRRRR.",
+      "WWWWWWW",
+      "PPPPPPPP",
+      "GGGG.GG"
+    ]
+  },
+  {
+    "id": 132,
+    "world": 7,
+    "colors": 6,
+    "dropInterval": 7,
+    "rows": [
+      "..BBBB..",
+      ".CPYBO.",
+      "POCCCOOO",
+      ".OOPPP.",
+      "..OOWC..",
+      ".CYWWW.",
+      "OBYWWWPP",
+      ".BWWCW."
+    ]
+  },
+  {
+    "id": 133,
+    "world": 7,
+    "colors": 6,
+    "dropInterval": 7,
+    "rows": [
+      "..RRGP..",
+      "..RPG..",
+      "..RRPC..",
+      ".PPRPC.",
+      ".YCWWWC.",
+      ".CWRRW.",
+      ".GYWRPC.",
+      "WCCWPCY"
+    ]
+  },
+  {
+    "id": 134,
+    "world": 7,
+    "colors": 6,
+    "dropInterval": 7,
+    "rows": [
+      "RRPOOOPW",
+      "RRCGROO",
+      ".GCCRCP.",
+      ".CCCCC.",
+      "..OOCG..",
+      "..OWC..",
+      "...RW...",
+      "...R..."
+    ]
+  },
+  {
+    "id": 135,
+    "world": 7,
+    "colors": 6,
+    "dropInterval": 7,
+    "rows": [
+      "WWWWBBBB",
+      ".PPPBB.",
+      "..GPPG..",
+      ".GGPWG.",
+      "GGYPCBCC",
+      ".YYWCC.",
+      "..YBPC..",
+      ".WYYGC."
+    ]
+  },
+  {
+    "id": 136,
+    "world": 7,
+    "colors": 6,
+    "dropInterval": 7,
+    "rows": [
+      "PPPPPPCC",
+      "PRPPPC.",
+      "PCRPPPPP",
+      "POWRO.P",
+      "POPWWGGP",
+      ".GGRCCP",
+      "GPW.PPPP",
+      "GPWRP.P"
+    ]
+  },
+  {
+    "id": 137,
+    "world": 7,
+    "colors": 6,
+    "dropInterval": 7,
+    "rows": [
+      "YGGGOWWP",
+      ".GWOWW.",
+      "..CWGG..",
+      ".CCYYP.",
+      "CCCWWYGG",
+      ".PCWWW.",
+      "..GCCC..",
+      ".OWWWC."
+    ]
+  },
+  {
+    "id": 138,
+    "world": 7,
+    "colors": 6,
+    "dropInterval": 7,
+    "rows": [
+      "..GGPG..",
+      "..RWP..",
+      "..RYGG..",
+      ".RYYGW.",
+      ".RRGYWY.",
+      ".ORRYW.",
+      ".RRRYOO.",
+      "GGRYGPW"
+    ]
+  },
+  {
+    "id": 139,
+    "world": 7,
+    "colors": 6,
+    "dropInterval": 7,
+    "rows": [
+      "BBBRRRRR",
+      "BRR..PR",
+      "BBR...GR",
+      "PCR..BR",
+      "CRPYRY..",
+      "CGYRR..",
+      "CCRRRG..",
+      "CCRRGRB"
+    ]
+  },
+  {
+    "id": 140,
+    "world": 7,
+    "colors": 6,
+    "dropInterval": 6,
+    "rows": [
+      "..PYBB..",
+      "..YYB..",
+      "..BBBB..",
+      ".PBBYW.",
+      ".YRWYYP.",
+      ".CRYBW.",
+      ".CRRYCC.",
+      "CBCBYYC"
+    ]
+  },
+  {
+    "id": 141,
+    "world": 8,
+    "colors": 7,
+    "dropInterval": 6,
+    "rows": [
+      "CCPPRYYY",
+      "COPRRYB",
+      "C...RRYY",
+      "....ROO",
+      ".....BPY",
+      ".....WP",
+      ".....WWP",
+      "....CWB"
+    ]
+  },
+  {
+    "id": 142,
+    "world": 8,
+    "colors": 7,
+    "dropInterval": 6,
+    "rows": [
+      "OOOOBOOO",
+      "RRRRRRB",
+      "GGGGGGGG",
+      "GGGGGG.",
+      "C.CCC.CC",
+      "C.C.CCC",
+      "YYYY.YYY",
+      "PPBPPPP"
+    ]
+  },
+  {
+    "id": 143,
+    "world": 8,
+    "colors": 7,
+    "dropInterval": 6,
+    "rows": [
+      "GGGOOOBB",
+      "..WY.O.",
+      "..W.CO..",
+      "..WC.O.",
+      "..W.BO..",
+      ".WCPYO.",
+      ".WWYCOO.",
+      ".WWPCP."
+    ]
+  },
+  {
+    "id": 144,
+    "world": 8,
+    "colors": 7,
+    "dropInterval": 6,
+    "rows": [
+      "CBCCCCCC",
+      "PPPPPP.",
+      ".WWWWWBW",
+      "W.W.WWW",
+      "RBRRRR.R",
+      "OOOOOOO",
+      "OOOOO.OO",
+      "Y.YYYYY"
+    ]
+  },
+  {
+    "id": 145,
+    "world": 8,
+    "colors": 7,
+    "dropInterval": 6,
+    "rows": [
+      "RYYYYYYY",
+      "RYYRY..",
+      "ROOOO...",
+      "OORY...",
+      "PCORC...",
+      "GBBCC..",
+      "BBBPPCBG",
+      "COOOCCG"
+    ]
+  },
+  {
+    "id": 146,
+    "world": 8,
+    "colors": 7,
+    "dropInterval": 6,
+    "rows": [
+      "PPPPCPPC",
+      "PRBBPPC",
+      ".RYROPY.",
+      ".POYPG.",
+      "..PPBG..",
+      "..PPO..",
+      "...GP...",
+      "...G..."
+    ]
+  },
+  {
+    "id": 147,
+    "world": 8,
+    "colors": 7,
+    "dropInterval": 6,
+    "rows": [
+      "WWWWWWWY",
+      "WYWWWWW",
+      "PPPPPPPP",
+      "PPPPPP.",
+      "C.CCCCCC",
+      "BBBBBBY",
+      "GGGGGG.G",
+      "RRRRRRR"
+    ]
+  },
+  {
+    "id": 148,
+    "world": 8,
+    "colors": 7,
+    "dropInterval": 6,
+    "rows": [
+      "CCCGGCCC",
+      "C.GGG.C",
+      "PCGGBGCC",
+      "CWGGGWC",
+      "RWWGGWWR",
+      "WCYYYCW",
+      "BRRYYRRB",
+      "GPCYCPG"
+    ]
+  },
+  {
+    "id": 149,
+    "world": 8,
+    "colors": 7,
+    "dropInterval": 6,
+    "rows": [
+      "OOBBBGBB",
+      "WWCWBBC",
+      ".RWCWYG.",
+      ".WCWWY.",
+      "..WCGW..",
+      "..YCO..",
+      "...CR...",
+      "...R..."
+    ]
+  },
+  {
+    "id": 150,
+    "world": 8,
+    "colors": 7,
+    "dropInterval": 6,
+    "rows": [
+      ".GPPPPP.",
+      "GGP.WPP",
+      ".GGPBPY.",
+      "..RBP..",
+      ".GOBRPG.",
+      "GGY.RRP",
+      ".WRYYOO.",
+      "..RWY.."
+    ]
+  },
+  {
+    "id": 151,
+    "world": 8,
+    "colors": 7,
+    "dropInterval": 6,
+    "rows": [
+      "..CCCC..",
+      "..CPC..",
+      "..GGYP..",
+      ".GPYYO.",
+      ".YYPPYY.",
+      ".BYOYY.",
+      ".OYYRRB.",
+      "BYGRRPP"
+    ]
+  },
+  {
+    "id": 152,
+    "world": 8,
+    "colors": 7,
+    "dropInterval": 6,
+    "rows": [
+      "RYYRRRRP",
+      "BGRRCRR",
+      ".PCCBBO.",
+      ".RBPPB.",
+      "..RYGG..",
+      "..RRO..",
+      "...RO...",
+      "...Y..."
+    ]
+  },
+  {
+    "id": 153,
+    "world": 8,
+    "colors": 7,
+    "dropInterval": 6,
+    "rows": [
+      "..RWOO..",
+      "..WGO..",
+      "..OGOO..",
+      ".OCWPO.",
+      ".PYRRPO.",
+      ".GROOO.",
+      ".GYYGYY.",
+      "GYYYYCC"
+    ]
+  },
+  {
+    "id": 154,
+    "world": 8,
+    "colors": 7,
+    "dropInterval": 6,
+    "rows": [
+      "RRRRRYYR",
+      "RRRORYR",
+      ".RPOOOR.",
+      ".POBGB.",
+      "..PWGG..",
+      "..WWB..",
+      "...WW...",
+      "...W..."
+    ]
+  },
+  {
+    "id": 155,
+    "world": 8,
+    "colors": 7,
+    "dropInterval": 6,
+    "rows": [
+      "ORBBBOOP",
+      "RYRCYWW",
+      "R...CPWO",
+      "....POO",
+      ".....WOO",
+      "......C",
+      ".......Y",
+      "......O"
+    ]
+  },
+  {
+    "id": 156,
+    "world": 8,
+    "colors": 7,
+    "dropInterval": 6,
+    "rows": [
+      ".PPYYPP.",
+      "..YYP..",
+      ".BYYYPP.",
+      "BGG.YPP",
+      ".BGOBCC.",
+      "..RRB..",
+      ".OOOOCC.",
+      "YRB.COO"
+    ]
+  },
+  {
+    "id": 157,
+    "world": 8,
+    "colors": 7,
+    "dropInterval": 6,
+    "rows": [
+      "YYYYYYYY",
+      "RR.RRRR",
+      "BBBBBBBB",
+      "PPPPPPP",
+      "..OOOOOO",
+      "OOOOO.O",
+      "GGGGGGGG",
+      "CC.CCCC"
+    ]
+  },
+  {
+    "id": 158,
+    "world": 8,
+    "colors": 7,
+    "dropInterval": 6,
+    "rows": [
+      "..BRRO..",
+      "..RRR..",
+      "..RROB..",
+      ".RPOOO.",
+      ".RPOOYP.",
+      ".GOORB.",
+      ".YPRCCO.",
+      "YYGCGOO"
+    ]
+  },
+  {
+    "id": 159,
+    "world": 8,
+    "colors": 7,
+    "dropInterval": 6,
+    "rows": [
+      "PPPPPPPP",
+      ".WWWWWW",
+      "GGBGGGGG",
+      "BCCCCCC",
+      "CCCCC.CC",
+      "BRRRRRR",
+      "RRRRRRRR",
+      ".OOOOO."
+    ]
+  },
+  {
+    "id": 160,
+    "world": 8,
+    "colors": 7,
+    "dropInterval": 5,
+    "rows": [
+      "GGGOOGYG",
+      "P.ROR.P",
+      "PPPOOPPP",
+      "PGYYOGP",
+      "PCOGGOCP",
+      "WO.O.OW",
+      "PROOOOWP",
+      ".C...C."
+    ]
+  },
+  {
+    "id": 161,
+    "world": 9,
+    "colors": 7,
+    "dropInterval": 6,
+    "rows": [
+      "ROOWRCOP",
+      "OOWWBOP",
+      ".OOCBYY.",
+      ".OYBYP.",
+      "..YCBY..",
+      "..YRB..",
+      "...CO...",
+      "...B..."
+    ]
+  },
+  {
+    "id": 162,
+    "world": 9,
+    "colors": 7,
+    "dropInterval": 6,
+    "rows": [
+      "BPPPWPGP",
+      "CPBCCOB",
+      "..PRCOWB",
+      "..ORR..",
+      "...BR...",
+      "...B...",
+      "...PB...",
+      "..GWG.."
+    ]
+  },
+  {
+    "id": 163,
+    "world": 9,
+    "colors": 7,
+    "dropInterval": 6,
+    "rows": [
+      "OOOOPOOO",
+      "WWWWWWW",
+      "GGGGGGGG",
+      "GGGYGGG",
+      "RRYRR.RR",
+      ".R.RRRR",
+      "BBBY.BBP",
+      "BBBBBPB"
+    ]
+  },
+  {
+    "id": 164,
+    "world": 9,
+    "colors": 7,
+    "dropInterval": 6,
+    "rows": [
+      "RRRRRRRY",
+      "RO.CORW",
+      "GWWCCRRW",
+      "GP.CRRR",
+      "WPPYR.GR",
+      "R.RRWOG",
+      "RRO.WW.G",
+      "Y.OP.RO"
+    ]
+  },
+  {
+    "id": 165,
+    "world": 9,
+    "colors": 7,
+    "dropInterval": 6,
+    "rows": [
+      "..CCCC..",
+      "..COC..",
+      "..RPPP..",
+      ".CRPPB.",
+      ".CCOOPB.",
+      ".CCGGC.",
+      ".CBCCCY.",
+      "CYGCCRY"
+    ]
+  },
+  {
+    "id": 166,
+    "world": 9,
+    "colors": 7,
+    "dropInterval": 6,
+    "rows": [
+      "YYYYYYYY",
+      "R.RRORG",
+      "RRRORROR",
+      "WWWWWWW",
+      "WWWW.WWW",
+      "PG.PPPP",
+      "PPPPPPPP",
+      ".GC.CC."
+    ]
+  },
+  {
+    "id": 167,
+    "world": 9,
+    "colors": 7,
+    "dropInterval": 6,
+    "rows": [
+      "..RPPY..",
+      ".PWWWW.",
+      "BBOWWOWW",
+      ".WWWWW.",
+      "..PPBW..",
+      ".PPPWW.",
+      "GGGYOWWY",
+      ".GGRRY."
+    ]
+  },
+  {
+    "id": 168,
+    "world": 9,
+    "colors": 7,
+    "dropInterval": 6,
+    "rows": [
+      "WWRBOOGP",
+      "R.Y..O.",
+      ".RG..O..",
+      "R.Y..O.",
+      ".RY..O..",
+      "GYP.RO.",
+      "BYBRYYY.",
+      "YYW.PY."
+    ]
+  },
+  {
+    "id": 169,
+    "world": 9,
+    "colors": 7,
+    "dropInterval": 6,
+    "rows": [
+      "CCRBCPWR",
+      "YBOPBRW",
+      "PBOOBPPP",
+      ".PORWBP",
+      "BB.WWWBW",
+      "OOOWW.W",
+      "OYCORRBC",
+      ".C.PRCY"
+    ]
+  },
+  {
+    "id": 170,
+    "world": 9,
+    "colors": 7,
+    "dropInterval": 6,
+    "rows": [
+      ".WYOPPY.",
+      "..BPP..",
+      ".CCCCBR.",
+      "CCR.CBR",
+      ".YBBCOB.",
+      "..BOO..",
+      ".BBPWPP.",
+      "WBB.OPP"
+    ]
+  },
+  {
+    "id": 171,
+    "world": 9,
+    "colors": 7,
+    "dropInterval": 6,
+    "rows": [
+      "BBYYYYBB",
+      "GPPYPPG",
+      ".GPPPPG.",
+      "P.PCP.P",
+      "OPWCCWPO",
+      "OPPPPPO",
+      "OWPPPPWO",
+      "OGPPPGO",
+      "OYGGGGYO"
+    ]
+  },
+  {
+    "id": 172,
+    "world": 9,
+    "colors": 7,
+    "dropInterval": 6,
+    "rows": [
+      "PCBBBBPW",
+      "POBY.YW",
+      "POPRYCBW",
+      "OOWYYYW",
+      "OOPBRPYY",
+      "OBBYPYP",
+      ".BPOPPPB",
+      "BPOPPPR",
+      ".BO.PPPC"
+    ]
+  },
+  {
+    "id": 173,
+    "world": 9,
+    "colors": 7,
+    "dropInterval": 6,
+    "rows": [
+      "GGGGGGGG",
+      "GBYGYBG",
+      "GO.OO.OG",
+      "OOOOOOO",
+      ".OPRRPO.",
+      "PWWRWWP",
+      "PPPGGYPP",
+      "BG.R.GB",
+      "BBBOOBBB"
+    ]
+  },
+  {
+    "id": 174,
+    "world": 9,
+    "colors": 7,
+    "dropInterval": 6,
+    "rows": [
+      "BYYYYPWW",
+      "B.P..P.",
+      ".BP..P..",
+      "B.P..P.",
+      ".RP..P..",
+      "R.P..P.",
+      "OGGG.PP.",
+      "OORGBPW",
+      "BPGG.PP."
+    ]
+  },
+  {
+    "id": 175,
+    "world": 9,
+    "colors": 7,
+    "dropInterval": 6,
+    "rows": [
+      ".WOOOOY.",
+      "RWY.OWW",
+      ".WPYYOO.",
+      "..PYR..",
+      ".GBYYYY.",
+      "GWO.RPY",
+      ".GWRGBB.",
+      "..RRB..",
+      ".WRORRR."
+    ]
+  },
+  {
+    "id": 176,
+    "world": 9,
+    "colors": 7,
+    "dropInterval": 6,
+    "rows": [
+      "WWCCYYYR",
+      "W.WYYYW",
+      "PYPPYYWW",
+      "..PYWWW",
+      "BWWCWWW.",
+      "PCWOYYR",
+      "PBBOPCY.",
+      "RBOOPYY",
+      "BYB.OOOO"
+    ]
+  },
+  {
+    "id": 177,
+    "world": 9,
+    "colors": 7,
+    "dropInterval": 6,
+    "rows": [
+      "WWPWWWWW",
+      "WWWWWWW",
+      "BBBBBBBB",
+      "BBB.BBB",
+      "GGGG.GGG",
+      "GCGG..G",
+      "CRRRRRRR",
+      "OP.OCOO",
+      ".OOOOOOP"
+    ]
+  },
+  {
+    "id": 178,
+    "world": 9,
+    "colors": 7,
+    "dropInterval": 6,
+    "rows": [
+      "PPYPYYWY",
+      "..OO.R.",
+      "..O.OR..",
+      "..OO.R.",
+      "..O.OB..",
+      "..OO.B.",
+      "..PWORR.",
+      ".GPWRGR",
+      "..RBGGG."
+    ]
+  },
+  {
+    "id": 179,
+    "world": 9,
+    "colors": 7,
+    "dropInterval": 6,
+    "rows": [
+      "RRRRORRR",
+      ".BBBBB.",
+      "BB.BBBBB",
+      ".CC.CCC",
+      "CCCCCCC.",
+      "GGGGGGG",
+      "YYYOYYYY",
+      ".YYYYYY",
+      "WWWOWWWW"
+    ]
+  },
+  {
+    "id": 180,
+    "world": 9,
+    "colors": 7,
+    "dropInterval": 5,
+    "rows": [
+      "GGYRGGYY",
+      "..WB.Y.",
+      "..W.BP..",
+      "..WB.Y.",
+      "..R.OO..",
+      "..WB.P.",
+      "..BBBGY.",
+      ".BBPWYY",
+      "..BGGRO."
+    ]
+  },
+  {
+    "id": 181,
+    "world": 10,
+    "colors": 8,
+    "dropInterval": 5,
+    "rows": [
+      "RBBBBRBB",
+      "BBBBBBB",
+      "..OO.OOO",
+      "YYYYYYY",
+      "WWWWWW.W",
+      "PPPRPPP",
+      "CCC.CCCC",
+      "CCCCCCC",
+      "GGGGGGGG"
+    ]
+  },
+  {
+    "id": 182,
+    "world": 10,
+    "colors": 8,
+    "dropInterval": 5,
+    "rows": [
+      "GGGWYOCW",
+      "GYWYYPW",
+      "CGGGYWWY",
+      ".GO.YPW",
+      "WRRR.YWW",
+      "GBRRWYW",
+      "G.OWWP.G",
+      "GCYBBBG",
+      "GG.BBBBG"
+    ]
+  },
+  {
+    "id": 183,
+    "world": 10,
+    "colors": 8,
+    "dropInterval": 5,
+    "rows": [
+      "..BBRW..",
+      "..BBG..",
+      "..BGBC..",
+      ".BPYBP.",
+      ".BPPRWC.",
+      ".CWPPC.",
+      ".CORCPB.",
+      "OOYCCGB",
+      "OOOYCPPB"
+    ]
+  },
+  {
+    "id": 184,
+    "world": 10,
+    "colors": 8,
+    "dropInterval": 5,
+    "rows": [
+      "ROGGWWWP",
+      "RORW.CO",
+      "RBOOOO.P",
+      "COOYGGR",
+      ".CCOYYWR",
+      "YCOW.YR",
+      "Y.CBBRRB",
+      ".CPWRR.",
+      "WYYYORRR"
+    ]
+  },
+  {
+    "id": 185,
+    "world": 10,
+    "colors": 8,
+    "dropInterval": 5,
+    "rows": [
+      "CCCCCCCC",
+      "PPPPPPP",
+      "PPPPPPPP",
+      "YYYYYYY",
+      "RRR.RRRR",
+      "GGGGG.G",
+      "BBBBBBBB",
+      "WWWWWWW",
+      "OOOOOOOO"
+    ]
+  },
+  {
+    "id": 186,
+    "world": 10,
+    "colors": 8,
+    "dropInterval": 5,
+    "rows": [
+      "YYOCCGWW",
+      "YBPWCWW",
+      ".BBGWWW.",
+      ".BBWWG.",
+      "..POWW..",
+      "..BWW..",
+      "...RO...",
+      "...P...",
+      "...RR..."
+    ]
+  },
+  {
+    "id": 187,
+    "world": 10,
+    "colors": 8,
+    "dropInterval": 5,
+    "rows": [
+      "BGWPYYRP",
+      "..OC.B.",
+      "..O.GC..",
+      "..OP.G.",
+      "..C.GG..",
+      "..OG.G.",
+      "..YYGWR.",
+      ".YWWWWW",
+      "..ORWBW."
+    ]
+  },
+  {
+    "id": 188,
+    "world": 10,
+    "colors": 8,
+    "dropInterval": 5,
+    "rows": [
+      "BBBCCYPP",
+      "BRCCBYY",
+      "BB.CCY.G",
+      ".BCYOYY",
+      "WCC.WWWY",
+      "CCYYWWW",
+      ".RBCW..W",
+      "GOO.WGG",
+      ".WOOCWRP"
+    ]
+  },
+  {
+    "id": 189,
+    "world": 10,
+    "colors": 8,
+    "dropInterval": 5,
+    "rows": [
+      "WWWYCRPY",
+      "P.BG...",
+      ".WO.G...",
+      "W.OG...",
+      ".WY.G...",
+      "W.OG...",
+      "WRGGG...",
+      "WPBCC..",
+      "WBCCR..."
+    ]
+  },
+  {
+    "id": 190,
+    "world": 10,
+    "colors": 8,
+    "dropInterval": 5,
+    "rows": [
+      "BBBBBBBB",
+      "GGGGGGG",
+      "OOOOOOOO",
+      "YWWWWWW",
+      "WWWYWW.W",
+      "CCCCCCC",
+      "CCCCC.CC",
+      ".PPPPPP",
+      "..Y.RRRR"
+    ]
+  },
+  {
+    "id": 191,
+    "world": 10,
+    "colors": 8,
+    "dropInterval": 5,
+    "rows": [
+      "ROCYOOCC",
+      "R.BGGOC",
+      "RBBCGGCC",
+      "BWOCPCC",
+      "GWWOCPBC",
+      "PWWRCC.",
+      "BBWWOPCP",
+      "..PGYCG",
+      "..PPY.CW"
+    ]
+  },
+  {
+    "id": 192,
+    "world": 10,
+    "colors": 8,
+    "dropInterval": 5,
+    "rows": [
+      "WWPYYBCC",
+      "WGRYYOY",
+      ".RRPYYO.",
+      ".BRPYY.",
+      "..BRYG..",
+      "..PPG..",
+      "...PO...",
+      "...O...",
+      "...CO..."
+    ]
+  },
+  {
+    "id": 193,
+    "world": 10,
+    "colors": 8,
+    "dropInterval": 5,
+    "rows": [
+      "..BYRR..",
+      "..WCR..",
+      "..CGOR..",
+      ".WGGYR.",
+      ".PBRRRC.",
+      ".PCBRO.",
+      ".RPPGBB.",
+      "ORRYCBB",
+      "PGRGGWBB"
+    ]
+  },
+  {
+    "id": 194,
+    "world": 10,
+    "colors": 8,
+    "dropInterval": 5,
+    "rows": [
+      "RRRYYPPB",
+      "WRRYBOG",
+      ".CORBBG.",
+      ".CCOCC.",
+      "..CCPC..",
+      "..GWB..",
+      "...BW...",
+      "...W...",
+      "...WW..."
+    ]
+  },
+  {
+    "id": 195,
+    "world": 10,
+    "colors": 8,
+    "dropInterval": 5,
+    "rows": [
+      "YYYGCYYY",
+      "Y.CYC.Y",
+      "YRP..RRY",
+      "GROCCRY",
+      ".RRGCPR.",
+      "RRRCRRP",
+      "RRW..WRO",
+      "RROBBRR",
+      "WW.BB.WW"
+    ]
+  },
+  {
+    "id": 196,
+    "world": 10,
+    "colors": 8,
+    "dropInterval": 5,
+    "rows": [
+      "YYOOOOOC",
+      "YYGWOCC",
+      ".YYPBWR.",
+      ".OPGBR.",
+      "..OPBW..",
+      "..PCW..",
+      "...RW...",
+      "...P...",
+      "...YG..."
+    ]
+  },
+  {
+    "id": 197,
+    "world": 10,
+    "colors": 8,
+    "dropInterval": 5,
+    "rows": [
+      "PPCPPOOR",
+      "PRPPCWW",
+      "PPCCR...",
+      "PPCO...",
+      "WWBB....",
+      "YYYO...",
+      "OYYOG...",
+      "OGOOOBW",
+      "OOGOOCRW"
+    ]
+  },
+  {
+    "id": 198,
+    "world": 10,
+    "colors": 8,
+    "dropInterval": 5,
+    "rows": [
+      "BOOWCBBB",
+      ".YGRPB.",
+      "..YRRY..",
+      ".RRWCY.",
+      "RRBBOCYO",
+      ".BBBBB.",
+      "..BBGG..",
+      ".BOBBB.",
+      "PRBOOPPW"
+    ]
+  },
+  {
+    "id": 199,
+    "world": 10,
+    "colors": 8,
+    "dropInterval": 5,
+    "rows": [
+      "BRGP...G",
+      "OBB....",
+      "..B.....",
+      "..R....",
+      "..YC...W",
+      "..PPBBW",
+      "...BBBCC",
+      "..YYGOB",
+      "..OYWRBB"
+    ]
+  },
+  {
+    "id": 200,
+    "world": 10,
+    "colors": 8,
+    "dropInterval": 4,
+    "rows": [
+      "..RRRR..",
+      "..GRR..",
+      "..GBBW..",
+      ".OGYGW.",
+      ".GGGYBB.",
+      ".GBCBB.",
+      ".PGCBBW.",
+      "CPBOGBP",
+      "BPPBOGYP"
+    ]
+  }
+]
