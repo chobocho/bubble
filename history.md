@@ -1,3 +1,9 @@
+### [2026-10-23 06:17] 육각 그리드 보드 모델 구현
+- **기획:** plan.md 태스크 2 — 상수와 홀수 행 offset 좌표계 기반 순수 함수 보드 모델
+- **TC:** 정상: 6방향 이웃·좌표 공식·전 셀 왕복 변환·파싱/직렬화 / 엣지: 모서리·벽·마지막 행·범위 밖·빈 보드·잘못된 문자/길이
+- **개발:** src/core/constants.ts, src/core/board.ts, tests/board.test.ts
+- **검증:** 30 passed, 0 failed / typecheck 0 errors
+
 ### [2026-10-23 06:15] Vite 단일 파일 TypeScript 프로젝트 스캐폴딩
 - **기획:** plan.md 태스크 1 — Vite + singlefile 빌드, build.sh, 릴리스 검증 스크립트 구성
 - **TC:** 정상: 인라인 단일 HTML 통과 / 엣지: 디렉터리 없음·빈 폴더·추가 파일·외부 src/href·url(http·동적 import·10KB 이하·2MB 이상
