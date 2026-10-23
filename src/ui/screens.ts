@@ -18,6 +18,8 @@ export interface AppHooks {
   onUiClick?(): void;
   /** 음소거 상태가 바뀌었을 때 */
   onMuteChange?(muted: boolean): void;
+  /** 스테이지를 새로 시작할 때 (이전 판의 파티클 정리용) */
+  onStageStart?(): void;
   /** 렌더러가 보드 위에 덧그릴 효과 (파티클 등) */
   drawEffects?(r: Renderer): void;
   /** 이번 프레임 보드 흔들림 오프셋 */
@@ -263,6 +265,7 @@ export class App {
     const stage = this.stages[id - 1];
     if (!stage) return;
     this.hooks.onUiClick?.();
+    this.hooks.onStageStart?.();
     this.game = new Game(stage);
     this.cursor = id;
     this.world = Math.ceil(id / PER_WORLD);

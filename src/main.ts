@@ -1,6 +1,9 @@
 // 진입점: 캔버스·입력·저장소·화면 상태를 연결하고 고정 스텝 루프를 돌린다.
+import { type AudioContextLike, Sfx, type SfxName } from './audio/sfx';
 import { STEP } from './core/constants';
+import type { GameEvent } from './core/game';
 import { type FrameInput, InputController } from './input/input';
+import { Effects } from './render/effects';
 import { Renderer } from './render/renderer';
 import { STAGES } from './stages/index';
 import { ProgressStore } from './storage/progress';
@@ -15,7 +18,45 @@ if (!(canvas instanceof HTMLCanvasElement)) throw new Error('#game 캔버스가 
 const renderer = new Renderer(canvas);
 const input = new InputController(canvas);
 const progress = new ProgressStore(() => window.localStorage);
-const app = new App(progress, STAGES);
+const effects = new Effects(Date.now() >>> 0);
+
+// 구형 Safari 는 webkitAudioContext 만 제공한다
+type AudioCtor = new () => AudioContextLike;
+const w = window as unknown as { AudioContext?: AudioCtor; webkitAudioContext?: AudioCtor };
+const sfx = new Sfx(() => {
+  const Ctor = w.AudioContext ?? w.webkitAudioContext;
+  return Ctor ? new Ctor() : null;
+});
+sfx.muted = progress.get().muted;
+// 자동재생 정책: 첫 사용자 제스처 안에서 AudioContext 를 만들거나 resume 해야 소리가 난다
+const unlockAudio = () => sfx.unlock();
+window.addEventListener('pointerdown', unlockAudio);
+window.addEventListener('keydown', unlockAudio);
+
+const EVENT_SFX: Record<GameEvent['type'], SfxName> = {
+  fire: 'fire',
+  bounce: 'bounce',
+  stick: 'stick',
+  pop: 'pop',
+  drop: 'drop',
+  ceiling: 'ceiling',
+  clear: 'clear',
+  gameover: 'gameover',
+};
+
+const app = new App(progress, STAGES, {
+  onGameEvent(e) {
+    sfx.play(EVENT_SFX[e.type]);
+    effects.handle(e);
+  },
+  onUiClick: () => sfx.play('bounce'),
+  onMuteChange(muted) {
+    sfx.muted = muted;
+  },
+  onStageStart: () => effects.clear(),
+  drawEffects: (r) => effects.draw(r),
+  shakeOffset: (time, warning) => effects.shakeOffset(time, warning),
+});
 
 window.addEventListener('resize', () => renderer.resize());
 document.addEventListener('visibilitychange', () => {
@@ -37,6 +78,7 @@ function frame(now: number): void {
     let steps = 0;
     while (acc >= STEP && steps < MAX_STEPS_PER_FRAME) {
       app.update(STEP, steps === 0 ? first : rest);
+      effects.update(STEP);
       acc -= STEP;
       steps++;
     }
