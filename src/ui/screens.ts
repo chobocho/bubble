@@ -5,7 +5,7 @@ import { CANVAS_W } from '../core/constants';
 import { Game, type GameEvent, type GameInput } from '../core/game';
 import type { FrameInput } from '../input/input';
 import { pointerToAngle } from '../input/input';
-import { type Button, HUD_TOP, PAUSE_BUTTON, type Rect, Renderer, UI } from '../render/renderer';
+import { type Button, HELP_BUTTON, HUD_TOP, PAUSE_BUTTON, type Rect, Renderer, UI } from '../render/renderer';
 import type { StageDef } from '../stages/types';
 import type { ProgressStore } from '../storage/progress';
 
@@ -34,6 +34,7 @@ const FULL_GUIDE_MAX_WORLD = 5;
 
 const FIRE_KEYS = new Set(['Space', 'ArrowUp']);
 const PAUSE_KEYS = new Set(['Escape', 'KeyP']);
+const HELP_KEY = 'KeyH';
 const CONFIRM_KEYS = new Set(['Enter', 'Space']);
 
 const inRect = (p: Point, r: Rect) => p.x >= r.x && p.x <= r.x + r.w && p.y >= r.y && p.y <= r.y + r.h;
@@ -169,7 +170,7 @@ export class App {
     for (const b of this.titleButtons()) r.button(b);
     const blink = Math.floor(this.time * 2) % 2 === 0;
     if (blink) r.text('Tap or press Enter', CANVAS_W / 2, 370, 12, UI.dim, 'center', '600');
-    r.text('← → aim · Space fire · P pause · M sound', CANVAS_W / 2, 440, 9, UI.dim, 'center', '500');
+    r.text('← → aim · Space fire · H help · P pause · M sound', CANVAS_W / 2, 440, 9, UI.dim, 'center', '500');
   }
 
   // ── 스테이지 선택 ──────────────────────────────────────────
@@ -337,6 +338,12 @@ export class App {
 
     const playTaps = input.taps.filter((t) => t.y < HUD_TOP);
     const pauseTapped = input.taps.some((t) => inRect(t, PAUSE_BUTTON));
+    const helpRequested = input.taps.some((t) => inRect(t, HELP_BUTTON)) || input.keys.includes(HELP_KEY);
+    // 횟수가 남아 있고 실제로 가이드를 켰을 때만 차감한다
+    if (helpRequested && this.progress.get().helps > 0 && g.activateHelp()) {
+      this.progress.useHelp();
+      this.hooks.onUiClick?.();
+    }
     // 마우스를 캔버스에 올려 둔 채 키보드로 조준할 때 포인터가 매 프레임 각도를 덮어쓰지 않도록, 움직였을 때만 반영한다
     const p = input.pointer;
     const moved = p !== undefined && (this.lastPointer === undefined || p.x !== this.lastPointer.x || p.y !== this.lastPointer.y);
@@ -358,11 +365,14 @@ export class App {
     const g = this.game;
     if (!g) return;
     const world = Math.ceil(g.stage.id / PER_WORLD);
-    const guide = world <= FULL_GUIDE_MAX_WORLD ? 2 : null;
+    // 헬프 가이드는 월드와 무관하게 반사 경로까지 보여 준다
+    const guide = !g.guideVisible ? false : g.helpActive || world <= FULL_GUIDE_MAX_WORLD ? 2 : null;
     const shake = this.hooks.shakeOffset?.(this.time, g.dropWarning) ?? 0;
     r.playfield(g, this.time, guide, shake);
     this.hooks.drawEffects?.(r);
-    r.hud(g.stage.id, g.score, g.shotsUntilDrop, g.dropWarning, this.time);
+    const helps = this.progress.get().helps;
+    const help = g.helpActive ? 'on' : g.canHelp && helps > 0 ? 'ready' : 'off';
+    r.hud(g.stage.id, g.score, g.shotsUntilDrop, g.dropWarning, this.time, helps, help);
 
     const overlay = this.overlayButtons(g);
     if (overlay.length === 0) return;

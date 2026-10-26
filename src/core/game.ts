@@ -47,6 +47,8 @@ export interface GameOptions {
 const AIM_SPEED = Math.PI * 0.6;
 /** 팝/낙하 연출을 보여 주는 동안 다음 발사를 막는 시간 (초) */
 const RESOLVE_TIME = 0.15;
+/** 헬프로 가이드를 켜고 쏜 발의 점수 배율 */
+export const HELP_SCORE_RATE = 0.1;
 
 export function shotScore(popped: number, dropped: number): number {
   return popped * 10 + (dropped > 0 ? 10 * 2 ** Math.min(dropped, 16) : 0);
@@ -67,6 +69,10 @@ export class Game {
   score = 0;
   shotsUsed = 0;
   shot: Shot | null = null;
+  /** 헬프로 가이드를 켠 상태. 다음 1발에만 적용되고 발사 시 꺼진다. */
+  helpActive = false;
+  /** 지금 날아가는 샷이 헬프 가이드를 보고 쏜 것인지 (점수 배율 적용용) */
+  private shotHelped = false;
   private shotsSinceDrop = 0;
   private resolveTimer = 0;
   private events: GameEvent[] = [];
@@ -88,6 +94,23 @@ export class Game {
   /** 하강 직전 마지막 2샷 동안 보드를 흔들어 경고한다 */
   get dropWarning(): boolean {
     return this.shotsUntilDrop <= 2 && (this.phase === 'aiming' || this.phase === 'flying');
+  }
+
+  /** 조준 가이드 표시 여부. 스테이지 1 은 항상, 이후 스테이지는 첫 발과 헬프 사용 시에만 보인다. */
+  get guideVisible(): boolean {
+    return this.stage.id === 1 || this.shotsUsed === 0 || this.helpActive;
+  }
+
+  /** 가이드가 숨겨진 조준 중에만 헬프를 켤 수 있다 */
+  get canHelp(): boolean {
+    return !this.paused && (this.phase === 'aiming' || this.phase === 'resolving') && !this.guideVisible;
+  }
+
+  /** 헬프 가이드를 켠다. 켰으면 true — 호출자가 이때만 헬프 횟수를 차감한다. */
+  activateHelp(): boolean {
+    if (!this.canHelp) return false;
+    this.helpActive = true;
+    return true;
   }
 
   /** 렌더러·효과음이 소비할 이벤트를 꺼내고 비운다 */
@@ -129,6 +152,8 @@ export class Game {
 
   private fire(): void {
     this.shot = createShot(this.angle, this.current);
+    this.shotHelped = this.helpActive;
+    this.helpActive = false;
     this.current = this.next;
     this.next = this.rollColor();
     this.shotsUsed++;
@@ -158,7 +183,8 @@ export class Game {
     const offset = this.board.ceilingOffset;
     if (popped.length > 0) this.events.push({ type: 'pop', cells: popped, ceilingOffset: offset });
     if (dropped.length > 0) this.events.push({ type: 'drop', cells: dropped, ceilingOffset: offset });
-    this.score += shotScore(popped.length, dropped.length);
+    const gained = shotScore(popped.length, dropped.length);
+    this.score += this.shotHelped ? Math.floor(gained * HELP_SCORE_RATE) : gained;
 
     if (isEmpty(this.board)) {
       const bonus = clearBonus(this.shotsUsed);

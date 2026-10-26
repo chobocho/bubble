@@ -26,6 +26,8 @@ export interface Button extends Rect {
 
 /** 하단 HUD 의 일시정지 버튼 영역 (App 의 탭 판정과 공유) */
 export const PAUSE_BUTTON: Rect = { x: 250, y: 458, w: 38, h: 22 };
+/** 하단 HUD 의 헬프(조준 가이드) 버튼 영역 */
+export const HELP_BUTTON: Rect = { x: 184, y: 459, w: 58, h: 20 };
 /** 하단 HUD 띠의 시작 y. 이 아래를 탭하면 발사로 보지 않는다. */
 export const HUD_TOP = 458;
 
@@ -197,10 +199,10 @@ export class Renderer {
   // ── 플레이 화면 ─────────────────────────────────────────────
 
   /**
-   * @param guideBounces 조준선이 보여 줄 벽 반사 횟수. null 이면 첫 구간만 그린다 (월드 6 이상).
+   * @param guideBounces 조준선이 보여 줄 벽 반사 횟수. null 이면 첫 구간만 그린다 (월드 6 이상), false 면 숨긴다.
    * @param shake 보드 흔들림 x 오프셋 (천장 하강 경고)
    */
-  playfield(game: Game, time: number, guideBounces: number | null, shake: number): void {
+  playfield(game: Game, time: number, guideBounces: number | null | false, shake: number): void {
     const { ctx } = this;
     const top = BOARD_TOP + game.board.ceilingOffset * ROW_H;
 
@@ -210,7 +212,7 @@ export class Renderer {
     this.ceiling(top);
     this.deadline();
 
-    if (game.phase === 'aiming' || game.phase === 'resolving') {
+    if (guideBounces !== false && (game.phase === 'aiming' || game.phase === 'resolving')) {
       this.aimGuide(game, time, guideBounces);
     }
 
@@ -329,7 +331,14 @@ export class Renderer {
     }
   }
 
-  hud(stageId: number, score: number, shotsUntilDrop: number, warning: boolean, time: number): void {
+  /**
+   * @param helps 남은 헬프 횟수
+   * @param help 헬프 버튼 상태: 'off' 사용 불가, 'ready' 사용 가능, 'on' 이번 발에 적용 중
+   */
+  hud(
+    stageId: number, score: number, shotsUntilDrop: number, warning: boolean, time: number,
+    helps: number, help: 'off' | 'ready' | 'on',
+  ): void {
     const { ctx } = this;
     ctx.fillStyle = 'rgba(0,0,0,0.35)';
     ctx.fillRect(0, HUD_TOP, CANVAS_W, CANVAS_H - HUD_TOP);
@@ -341,6 +350,9 @@ export class Renderer {
     ctx.fillStyle = UI.dim;
     ctx.fillRect(p.x + p.w / 2 - 5, p.y + 6, 3.5, p.h - 12);
     ctx.fillRect(p.x + p.w / 2 + 1.5, p.y + 6, 3.5, p.h - 12);
+    this.button({
+      ...HELP_BUTTON, id: 'help', label: `HELP ${helps}`, enabled: help !== 'off', selected: help === 'on',
+    });
     // 천장 하강까지 남은 샷 (경고 시 깜빡임)
     const blink = warning && Math.floor(time * 6) % 2 === 0;
     this.text('DROP', 226, 432, 9, UI.dim);

@@ -134,6 +134,46 @@ describe('App 스모크', () => {
     expect(app.screen).toBe('title');
   });
 
+  it('정상: 헬프 버튼/H 키는 가이드가 숨겨졌을 때만 횟수를 1 쓴다', () => {
+    const store = new ProgressStore(() => new Mem());
+    store.recordClear(1, 1);
+    const app = new App(store, STAGES);
+    const r = new Renderer(fakeCanvas());
+    const step = (input: FrameInput = none) => {
+      app.update(1 / 120, input);
+      app.draw(r);
+    };
+    step(keys('Enter'));
+    step(keys('Enter'));
+    const g = app.game;
+    expect(g?.stage.id).toBe(2);
+    step(tap(184 + 20, 465)); // 첫 발: 가이드가 보이므로 헬프 불가
+    expect(store.get().helps).toBe(3);
+    expect(g?.phase).toBe('aiming'); // HUD 탭은 발사로 보지 않는다
+    if (!g) throw new Error('게임 없음');
+    g.shotsUsed = 1; // 첫 발을 쏜 뒤 상태 (실제 발사는 보드 결과에 따라 클리어될 수 있어 직접 설정)
+    step(tap(184 + 20, 465));
+    expect(g.helpActive).toBe(true);
+    expect(store.get().helps).toBe(2);
+    step(keys('KeyH')); // 이미 켜져 있으면 차감 안 함
+    expect(store.get().helps).toBe(2);
+  });
+
+  it('엣지: 헬프 횟수가 0 이면 켜지지 않는다', () => {
+    const store = new ProgressStore(() => new Mem());
+    store.recordClear(1, 1);
+    while (store.useHelp());
+    const app = new App(store, STAGES);
+    app.update(1 / 120, keys('Enter'));
+    app.update(1 / 120, keys('Enter'));
+    const g = app.game;
+    if (!g) throw new Error('게임 없음');
+    g.shotsUsed = 1;
+    app.update(1 / 120, keys('KeyH'));
+    expect(g.helpActive).toBe(false);
+    expect(store.get().helps).toBe(0);
+  });
+
   it('정상: 월드 6 이상(조준선 첫 구간만)과 마지막 스테이지도 그려진다', () => {
     const store = new ProgressStore(() => new Mem());
     for (let id = 1; id < 200; id++) store.recordClear(id, 1);

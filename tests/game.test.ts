@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { boardToRows, colorsPresent } from '../src/core/board';
 import { MAX_ANGLE, MIN_ANGLE, STEP } from '../src/core/constants';
-import { clearBonus, Game, type GameInput, type GameStage, shotScore } from '../src/core/game';
+import { clearBonus, Game, type GameInput, type GameStage, HELP_SCORE_RATE, shotScore } from '../src/core/game';
 
 const UP = Math.PI / 2;
 const idle: GameInput = { aimDelta: 0, fire: false, pause: false };
@@ -66,6 +66,55 @@ describe('Game', () => {
     expect(g.shotsUsed).toBe(1);
     expect(g.score).toBe(30 + 40 + clearBonus(1));
     expect(events).toEqual(expect.arrayContaining(['stick', 'pop', 'drop', 'clear']));
+  });
+
+  it('정상: 스테이지 1 은 가이드가 항상 보이고 헬프를 켤 수 없다', () => {
+    const g = new Game(stage(['RGBY....']));
+    expect(g.guideVisible).toBe(true);
+    g.shotsUsed = 5;
+    expect(g.guideVisible).toBe(true);
+    expect(g.activateHelp()).toBe(false);
+  });
+
+  it('정상: 스테이지 2 부터는 첫 발에만 가이드가 보이고, 헬프는 1발만 유지된다', () => {
+    const g = new Game({ id: 2, dropInterval: 10, rows: ['RGBY....', 'RGBY...'] });
+    expect(g.guideVisible).toBe(true);
+    expect(g.canHelp).toBe(false);
+    shoot(g, Math.PI * 0.3);
+    expect(g.phase).toBe('aiming');
+    expect(g.guideVisible).toBe(false);
+    expect(g.activateHelp()).toBe(true);
+    expect(g.guideVisible).toBe(true);
+    expect(g.activateHelp()).toBe(false); // 이미 켜져 있으면 다시 켜지지 않는다 (중복 차감 방지)
+    shoot(g, Math.PI * 0.7);
+    expect(g.helpActive).toBe(false);
+    expect(g.guideVisible).toBe(false);
+  });
+
+  it('엣지: 비행 중·일시정지 중에는 헬프를 켤 수 없다', () => {
+    const g = new Game({ id: 2, dropInterval: 10, rows: ['RGBY....'] });
+    g.shotsUsed = 1;
+    g.update(STEP, { ...idle, pause: true });
+    expect(g.activateHelp()).toBe(false);
+    g.update(STEP, { ...idle, pause: true });
+    g.update(STEP, fireAt(UP));
+    expect(g.phase).toBe('flying');
+    expect(g.activateHelp()).toBe(false);
+  });
+
+  it('정상: 헬프로 쏜 발의 점수만 0.1배(버림), 클리어 보너스는 그대로', () => {
+    const rows = ['...RR...', '....B..', '.....B..'];
+    const helped = new Game({ id: 2, dropInterval: 10, rows }, { queue: [0, 2] });
+    helped.shotsUsed = 1;
+    expect(helped.activateHelp()).toBe(true);
+    shoot(helped);
+    expect(helped.phase).toBe('cleared');
+    expect(helped.score).toBe(Math.floor((30 + 40) * HELP_SCORE_RATE) + clearBonus(2));
+
+    const plain = new Game({ id: 2, dropInterval: 10, rows }, { queue: [0, 2] });
+    plain.shotsUsed = 1;
+    shoot(plain);
+    expect(plain.score).toBe(30 + 40 + clearBonus(2));
   });
 
   it('정상: 클리어/게임오버 후에는 입력이 무시된다', () => {
