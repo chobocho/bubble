@@ -316,12 +316,12 @@ export class Renderer {
     ctx.rotate(-game.angle);
     ctx.fillStyle = UI.accent;
     ctx.beginPath();
-    ctx.moveTo(R + 70, 0);
-    ctx.lineTo(R + 54, -7);
-    ctx.lineTo(R + 54, 7);
+    ctx.moveTo(R + 46, 0);
+    ctx.lineTo(R + 30, -7);
+    ctx.lineTo(R + 30, 7);
     ctx.closePath();
     ctx.fill();
-    ctx.fillRect(R - 2, -2, 58, 4);
+    ctx.fillRect(R - 2, -2, 34, 4);
     ctx.restore();
 
     if (game.phase === 'aiming' || game.phase === 'resolving') this.bubble(SHOOTER_X, SHOOTER_Y, game.current);
