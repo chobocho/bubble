@@ -1,3 +1,9 @@
+### [2026-10-30 00:10] README 에 build.bat 사용법·미세 조준 버튼 추가
+- **기획:** Windows 사용자용 빌드 방법 안내
+- **TC:** 해당 없음(문서 작업)
+- **개발:** README.md 빌드 섹션 (build.sh / build.bat 구분, CP949 인코딩 주의, 실패 시 종료 코드), 조작 표에 ◀/▶ 미세 조준 버튼 행 추가
+- **검증:** 마크다운 구조 육안 확인
+
 ### [2026-10-30 00:00] Windows 빌드 스크립트 build.bat 추가
 - **기획:** build.sh 와 같은 순서(npm ci → typecheck → test → build → verify:release)를 Windows cmd 에서 실행
 - **TC:** 정상: PowerShell 에서 실행 시 release/index.html 생성·검증 OK, 종료 코드 0
