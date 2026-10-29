@@ -5,7 +5,7 @@ import { CANVAS_W } from '../core/constants';
 import { Game, type GameEvent, type GameInput } from '../core/game';
 import type { FrameInput } from '../input/input';
 import { pointerToAngle } from '../input/input';
-import { type Button, HELP_BUTTON, HUD_TOP, PAUSE_BUTTON, type Rect, Renderer, UI } from '../render/renderer';
+import { AIM_LEFT_BUTTON, AIM_RIGHT_BUTTON, type Button, HELP_BUTTON, HUD_TOP, PAUSE_BUTTON, type Rect, Renderer, UI } from '../render/renderer';
 import type { StageDef } from '../stages/types';
 import type { ProgressStore } from '../storage/progress';
 
@@ -36,8 +36,11 @@ const FIRE_KEYS = new Set(['Space', 'ArrowUp']);
 const PAUSE_KEYS = new Set(['Escape', 'KeyP']);
 const HELP_KEY = 'KeyH';
 const CONFIRM_KEYS = new Set(['Enter', 'Space']);
+/** 미세 조준 버튼 한 번에 돌리는 각도 */
+const AIM_STEP = (5 * Math.PI) / 180;
 
 const inRect = (p: Point, r: Rect) => p.x >= r.x && p.x <= r.x + r.w && p.y >= r.y && p.y <= r.y + r.h;
+const inAimButton = (p: Point) => inRect(p, AIM_LEFT_BUTTON) || inRect(p, AIM_RIGHT_BUTTON);
 
 export class App {
   screen: Screen = 'title';
@@ -336,7 +339,10 @@ export class App {
       return;
     }
 
-    const playTaps = input.taps.filter((t) => t.y < HUD_TOP);
+    // 미세 조준 버튼 탭은 발사·포인터 조준에서 뺀다. 왼쪽 버튼 = 반시계(+), 오른쪽 버튼 = 시계(-)
+    const playTaps = input.taps.filter((t) => t.y < HUD_TOP && !inAimButton(t));
+    const aimSteps = input.taps.reduce(
+      (n, t) => n + (inRect(t, AIM_LEFT_BUTTON) ? 1 : inRect(t, AIM_RIGHT_BUTTON) ? -1 : 0), 0);
     const pauseTapped = input.taps.some((t) => inRect(t, PAUSE_BUTTON));
     const helpRequested = input.taps.some((t) => inRect(t, HELP_BUTTON)) || input.keys.includes(HELP_KEY);
     // 횟수가 남아 있고 실제로 가이드를 켰을 때만 차감한다
@@ -349,10 +355,11 @@ export class App {
     const moved = p !== undefined && (this.lastPointer === undefined || p.x !== this.lastPointer.x || p.y !== this.lastPointer.y);
     this.lastPointer = p;
     const lastTap = playTaps[playTaps.length - 1];
-    const aimPoint = lastTap ?? (moved && p && p.y < HUD_TOP ? p : undefined);
+    const aimPoint = lastTap ?? (moved && p && p.y < HUD_TOP && !inAimButton(p) ? p : undefined);
+    const pointed = aimPoint ? pointerToAngle(aimPoint.x, aimPoint.y) : undefined;
 
     const gi: GameInput = {
-      aimAngle: aimPoint ? pointerToAngle(aimPoint.x, aimPoint.y) : undefined,
+      aimAngle: aimSteps !== 0 ? (pointed ?? g.angle) + aimSteps * AIM_STEP : pointed,
       aimDelta: input.aimDelta,
       fire: playTaps.length > 0 || input.keys.some((k) => FIRE_KEYS.has(k)),
       pause: pauseTapped || input.keys.some((k) => PAUSE_KEYS.has(k)),

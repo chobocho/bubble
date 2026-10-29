@@ -159,6 +159,25 @@ describe('App 스모크', () => {
     expect(store.get().helps).toBe(2);
   });
 
+  it('정상: 좌·우 하단 미세 조준 버튼은 탭마다 5° 돌리고 발사하지 않는다', () => {
+    const { app, step } = setup();
+    step(keys('Enter'));
+    step(keys('Enter'));
+    const g = app.game;
+    if (!g) throw new Error('게임 없음');
+    const deg = (a: number) => Math.round((a * 180) / Math.PI);
+    expect(deg(g.angle)).toBe(90);
+    step(tap(20, 430)); // 왼쪽 버튼
+    expect(deg(g.angle)).toBe(95);
+    expect(g.phase).toBe('aiming');
+    step(tap(265, 430)); // 오른쪽 버튼
+    step(tap(265, 430));
+    expect(deg(g.angle)).toBe(85);
+    for (let i = 0; i < 40; i++) step(tap(20, 430)); // 한계 각도에서 멈춘다
+    expect(deg(g.angle)).toBe(170);
+    expect(g.phase).toBe('aiming');
+  });
+
   it('엣지: 헬프 횟수가 0 이면 켜지지 않는다', () => {
     const store = new ProgressStore(() => new Mem());
     store.recordClear(1, 1);

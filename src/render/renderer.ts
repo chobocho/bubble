@@ -30,6 +30,9 @@ export const PAUSE_BUTTON: Rect = { x: 250, y: 458, w: 38, h: 22 };
 export const HELP_BUTTON: Rect = { x: 184, y: 459, w: 58, h: 20 };
 /** 하단 HUD 띠의 시작 y. 이 아래를 탭하면 발사로 보지 않는다. */
 export const HUD_TOP = 458;
+/** 플레이 영역 좌·우 하단의 미세 조준 버튼 (탭 한 번에 5° 회전) */
+export const AIM_LEFT_BUTTON: Rect = { x: 4, y: 416, w: 38, h: 38 };
+export const AIM_RIGHT_BUTTON: Rect = { x: 246, y: 416, w: 38, h: 38 };
 
 const NEXT_POS: Point = { x: 64, y: 444 };
 const FONT = 'system-ui, -apple-system, "Segoe UI", Roboto, sans-serif';
@@ -350,6 +353,8 @@ export class Renderer {
     ctx.fillStyle = UI.dim;
     ctx.fillRect(p.x + p.w / 2 - 5, p.y + 6, 3.5, p.h - 12);
     ctx.fillRect(p.x + p.w / 2 + 1.5, p.y + 6, 3.5, p.h - 12);
+    this.aimButton(AIM_LEFT_BUTTON, -1);
+    this.aimButton(AIM_RIGHT_BUTTON, 1);
     this.button({
       ...HELP_BUTTON, id: 'help', label: `HELP ${helps}`, enabled: help !== 'off', selected: help === 'on',
     });
@@ -357,5 +362,20 @@ export class Renderer {
     const blink = warning && Math.floor(time * 6) % 2 === 0;
     this.text('DROP', 226, 432, 9, UI.dim);
     this.text(String(shotsUntilDrop), 226, 448, 15, warning ? (blink ? UI.danger : UI.text) : UI.text);
+  }
+
+  /** 미세 조준 버튼. 이모지 글꼴 의존을 피하려고 삼각형을 직접 그린다. dir: -1 왼쪽, +1 오른쪽 */
+  private aimButton(b: Rect, dir: -1 | 1): void {
+    const { ctx } = this;
+    this.roundRect(b, 8, 'rgba(47,59,94,0.55)', 'rgba(255,255,255,0.12)');
+    const cx = b.x + b.w / 2;
+    const cy = b.y + b.h / 2;
+    ctx.fillStyle = UI.text;
+    ctx.beginPath();
+    ctx.moveTo(cx + dir * 8, cy);
+    ctx.lineTo(cx - dir * 6, cy - 9);
+    ctx.lineTo(cx - dir * 6, cy + 9);
+    ctx.closePath();
+    ctx.fill();
   }
 }
