@@ -1,3 +1,9 @@
+### [2026-10-30 00:00] Windows 빌드 스크립트 build.bat 추가
+- **기획:** build.sh 와 같은 순서(npm ci → typecheck → test → build → verify:release)를 Windows cmd 에서 실행
+- **TC:** 정상: PowerShell 에서 실행 시 release/index.html 생성·검증 OK, 종료 코드 0
+- **개발:** build.bat (CP949 인코딩, CRLF, 각 npm 단계 실패 시 종료 코드 1)
+- **검증:** typecheck 0 errors / 338 passed / verify-release OK (54.2 KB)
+
 ### [2026-10-29 23:50] 좌·우 하단 미세 조준 버튼 추가
 - **기획:** 모바일에서 드래그만으로는 정밀 조준이 어려움 → 플레이 영역 좌·우 하단 모서리에 ◀/▶ 버튼, 탭 1회당 5° 회전
 - **TC:** 정상: 왼쪽 탭 90→95°, 오른쪽 2회 탭 →85°, 발사되지 않음 / 엣지: 40회 연타 시 170° 한계에서 멈춤
